@@ -1,0 +1,37 @@
+// /* header bar */
+
+header {
+  background-color: $green;
+  height: 15vh;
+  padding-top: 5vh;
+
+  &.barcelona {
+    background-color: $orange;
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      align-items: flex-end;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.5vh;
+
+      @media only screen and (min-width: map-get($breakpoints, medium)){
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 0;
+      }
+    }
+
+    .logo {
+      margin-right: 2.5vw;
+    }
+  }
+}

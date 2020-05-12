@@ -1,0 +1,129 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/* FONTS */
+  /// Regular font family
+  // /// @type List
+  @font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('~@/assets/fonts/(AkzidenzGroteskBQ-Reg)AkzidenzGrotesk-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('~@/assets/fonts/AkzidenzGrotesk-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('~@/assets/fonts/AkzidenzGrotesk-LightItalicOsF.otf') format('otf');
+    font-weight: italic;
+    font-style: normal;
+  }
+
+  $font: 'AkizdenzGrotesk', sans-serif;
+
+/* FONT SIZES */
+  /// Header big
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-header-big: (
+    null    : 1.75rem,
+    'medium': 2.75rem
+  );
+
+  /// Header medium
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-header-medium: (
+    null    : 1.44rem,
+    'medium': 2.19rem
+  );
+
+  /// Header medium
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-header-small: (
+    null    : 1rem,
+    'medium': 1.13rem
+  );
+
+  /// Sub header big
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-sub-header-big: (
+    null    : 1rem,
+    'medium': 1.5rem
+  );
+
+  /// Sub header
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-sub-header-small: (
+    null    : 1rem,
+    'medium': 1.13rem
+  );
+
+  /// Text big
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-text-big: (
+    null    : 1.25rem,
+    'medium': 1.38rem
+  );
+
+  /// Text small
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-text-small: (
+    null    : 1rem,
+    'medium': 1.13rem
+  );
+
+  /// Menu
+  /// @prop {String} keys
+  /// @prop {Map} values
+  $font-size-menu: (
+    null    : 1rem, //need to change
+    'medium': 1rem,
+    'large': 1rem
+  );
+
+/* COLORS */
+  /// @type Color
+  $white: #FFF;
+
+  /// @type Color
+  $black: #000;
+
+  /// @type Color
+  $green: #004F44;
+
+  /// @type Color
+  $orange: #E67650;
+
+  /// @type Color
+  $grey: #EBEBEA;
+
+
+/* WIDTH */
+  /// Container's maximum width
+  /// @type Length
+  $max-width: 1200px;
+
+
+/* BREAKPOINTS */
+  /// Breakpoints map
+  /// @prop {String} keys - Keys are identifiers mapped to a given length
+  /// @prop {Map} values - Values are actual breakpoints expressed in pixels
+  $breakpoints: (
+    'small': 48em, /* 768px */
+    'medium': 62em, /* 992px */
+    'large': 75em, /* 1200px */
+    'extreme': 82.5em, /* 1200 + 120 = 1320px */
+  );

@@ -1,0 +1,24 @@
+{
+  "name": "solide-agency-portfolio",
+  "version": "1.0.0",
+  "description": "My incredible Nuxt.js project",
+  "author": "&lt;solideagency&gt;",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "dotenv": "^8.2.0",
+    "kentico-cloud-delivery": "^6.2.0",
+    "kentico-kontent-nuxt-module": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.0.0",
+    "rxjs": "^6.5.5",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {}
+}
