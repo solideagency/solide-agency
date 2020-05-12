@@ -41,7 +41,7 @@ export default {
     'kentico-kontent-nuxt-module'
   ],
   kenticokontent: {
-    projectId: 'eb33f0f9-64a0-000d-1dec-e17e345b69e3',
+    projectId: process.env.KENTICO_PROJECTID,
     enableAdvancedLogging: false,
     enablePreviewMode: true,
     enableSecuredMode: true
