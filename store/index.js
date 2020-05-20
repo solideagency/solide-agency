@@ -6,7 +6,10 @@ const createStore = () => {
     state: () => ({
       navigationitems: null,
       callToActions: null,
-      cityImages: null
+      cityImages: null,
+      keyValues: null,
+      services: null,
+      projects: null
     }),
     mutations: {
       setNavigation(state, navigationitems){
@@ -17,24 +20,28 @@ const createStore = () => {
       },
       setCityImages(state, cityImages){
         state.cityImages = cityImages;
+      },
+      setKeyValues(state, keyValues){
+        state.keyValues = keyValues;
+      },
+      setServices(state, services){
+        state.services = services;
+      },
+      setProjects(state, projects){
+        state.projects = projects;
       }
     },
     actions: {
-      // getTeasers (context) {
-      //   return this.$deliveryClient
-      //   .items()
-      //   .type('teaser')
-      //   .toPromise()
-      //   .then(response => {
-      //     context.commit('setTeasers', response.items.map(item => ({
-      //       title: item.title.value,
-      //       subtitle: item.title.value,
-      //       page: item.sitemap.value,
-      //       metadescription: item.seo__meta_description.value,
-      //       metadekeywords: item.seo__meta_keywords.value
-      //     })))
-      //   });
-      // },
+      getNavigation (context) {
+        return this.$deliveryClient
+        .taxonomy('sitemap')
+        .toObservable()
+        .subscribe(response => {
+          context.commit('setNavigation', response.taxonomy.terms.map(item => ({
+            name: item.name,
+          })))
+        });
+      },
 
       getCallToActions (context) {
         return this.$deliveryClient
@@ -51,30 +58,67 @@ const createStore = () => {
         });
       },
 
-      getNavigation (context) {
-        return this.$deliveryClient
-        .taxonomy('sitemap')
-        .toObservable()
-        .subscribe(response => {
-          context.commit('setNavigation', response.taxonomy.terms.map(item => ({
-            name: item.name,
-          })))
-        });
-      },
-
       getCityImages (context) {
         return this.$deliveryClient
         .items()
         .type('city_image')
         .toPromise()
         .then(response => {
-          console.log(response)
           context.commit('setCityImages', response.items.map(item => ({
             image: item.image_of_the_city.value[0].url,
             city: item.city.value[0].name
           })))
         });
       },
+
+      getKeyValues (context) {
+        return this.$deliveryClient
+        .items()
+        .type('key_value')
+        .toPromise()
+        .then(response => {
+          context.commit('setKeyValues', response.items.map(item => ({
+            sitemap: item.sitemap.value[0],
+            content: item.title.value
+          })))
+        });
+      },
+
+      getServices (context) {
+        return this.$deliveryClient
+        .items()
+        .type('service')
+        .toPromise()
+        .then(response => {
+          context.commit('setServices', response.items.map(item => ({
+            name: item.title.value
+          })))
+        });
+      },
+
+      getProjects (context) {
+        return this.$deliveryClient
+        .items()
+        .type('project')
+        .toPromise()
+        .then(response => {
+          console.log(response)
+          context.commit('setProjects', response.items.map(item => ({
+            title: item.title.value,
+            client: item.client.value,
+            date: item.publication_date.value,
+            headerImageURL: item.header_image.value[0].url,
+            headerImageAlt: item.header_image.value[0].description,
+            context: item.context.value,
+            productImages: item.product_images.value,
+            services: item.services.value,
+            seoDescription: item.seo__meta_description.value,
+            seoKeywords: item.seo__meta_keywords.value,
+            slug: item.untitled_url_slug.value
+          })))
+        });
+      }
+
     }
   });
 };

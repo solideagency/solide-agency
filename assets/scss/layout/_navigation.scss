@@ -1,0 +1,24 @@
+nav {
+  margin-top: 1.5vh;
+
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    margin: 0;
+  }
+
+  a {
+    margin-right: 1em;
+    padding: .25em;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+.barcelona {
+  nav {
+    a:hover {
+      background-color: $green;
+    }
+  }
+}

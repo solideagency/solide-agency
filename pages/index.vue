@@ -11,7 +11,10 @@
     <div>
       <div class="container">
         <div class="inner">
-          <calltoaction  linkto="Contact"/>
+          <keyvalue page="Home"/>
+          <service disable="Prepaid cards"/>
+          <projectpreview limit="3"/>
+          <calltoaction linkto="Contact"/>
         </div>
       </div>
     </div>
@@ -23,17 +26,27 @@
 import { mapMutations } from 'vuex'
 import calltoaction from '~/components/calltoaction.vue'
 import cityimage from '~/components/cityimages.vue'
+import keyvalue from '~/components/keyvalue.vue'
+import service from '~/components/service.vue'
+import projectpreview from '~/components/projectpreview.vue'
+
 
 export default {
   components: {
     calltoaction,
-    cityimage
+    cityimage,
+    keyvalue,
+    service,
+    projectpreview
   },
   async fetch ({store, params}) {
     return Promise.all([
       store.dispatch("getCallToActions"),
       store.dispatch("getNavigation"),
-      store.dispatch("getCityImages")
+      store.dispatch("getCityImages"),
+      store.dispatch("getKeyValues"),
+      store.dispatch("getServices"),
+      store.dispatch("getProjects")
     ])
   },
   head () {

@@ -10,20 +10,22 @@
 @import
   'base/reset',
   'base/typography',
-  'base/animations';
+  'base/typography-barcelona';
+
 
 // 3. Layout-related sections
 @import
-  'layout/grid';
+  'layout/header',
+  'layout/navigation',
+  'layout/teaser',
+  'layout/footer';
 
 // 4. Components
 @import
-  'components/header',
-  'components/navigation',
   'components/switch',
-  'components/teaser',
-  'components/call-to-action',
-  'components/footer';
+  'components/key-value',
+  'components/project',
+  'components/call-to-action';
 
 
 // 5. Page-specific styles

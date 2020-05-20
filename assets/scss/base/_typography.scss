@@ -1,47 +1,42 @@
-/**
- * Basic typography style for copy text
- */
-
 * {
   font-family: $font;
 }
 
-h1 {
+h1, h1 > strong {
   @include font-size($font-size-header-big);
+  font-weight: bold;
   line-height: 1.24;
-  color: white;
-
-  strong {
-    @include font-size($font-size-header-big);
-    transition: .3s;
-    box-shadow: inset 0px -15px 5px -1px rgba($orange, 0.6);
-  }
-
-  &.barcelona {
-    strong{
-      transition: .3s;
-      box-shadow: inset 0px -15px 5px -5px rgba($green, 0.6);
-    }
-  }
+  color: $white;
 }
 
 h2 {
   @include font-size($font-size-header-medium);
   line-height: 1.3;
+  font-weight: bold;
+  color: $white;
 }
 
 h3 {
   @include font-size($font-size-header-small);
   line-height: 1.3;
+  font-weight: bold;
 }
 
-span {
-  @include font-size($font-size-sub-header-small);
+.cta {
+  @include font-size($font-size-cta-small);
   line-height: 1.3;
+  font-style: italic;
+}
 
-  &.big-sub-header {
-    @include font-size($font-size-sub-header-big);
+.teaser {
+  .cta {
+    @include font-size($font-size-cta-big);
   }
+}
+
+strong {
+  @include font-size($font-size-header-big);
+  box-shadow: inset 0px -15px 5px -5px rgba($white, 0.3);
 }
 
 p, a, button, strong, em, input, span {
@@ -49,19 +44,19 @@ p, a, button, strong, em, input, span {
   text-decoration: none;
   color: $white;
 
-  &.small-text {
+  &.small-text, sub {
     @include font-size($font-size-text-small);
   }
 }
 
-.cta {
-  font-style: italic;
+.label {
+  @include font-size($font-size-label);
 }
 
 nav {
   a {
     @include font-size($font-size-menu);
-    color: $white;
+    color: $white !important;
     text-decoration: none;
     font-weight: 200;
 

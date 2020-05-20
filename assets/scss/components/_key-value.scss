@@ -1,0 +1,62 @@
+.key-value {
+  .text {
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      display: flex;
+      // justify-content: space-between;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, large)){
+      h2 {
+        width: column-width-large(5, 4);
+      }
+
+      p {
+        width: column-width-large(4, 4);
+        margin-left: column-width-large(2, 3);
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, extreme)){
+      h2 {
+        width: column-width-extreme(5, 4);
+      }
+
+      p {
+        width: column-width-extreme(4, 4);
+        margin-left: column-width-extreme(2, 3);
+      }
+    }
+  }
+
+  // Basic styling
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+}
+
+.services {
+  margin-bottom: 10em;
+
+  div {
+    margin-bottom: .75em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(2, 1);
+    margin-left: column-width-large(7, 7);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, extreme)){
+    width: column-width-extreme(2, 1);
+    margin-left: column-width-extreme(7, 7);
+
+  }
+}

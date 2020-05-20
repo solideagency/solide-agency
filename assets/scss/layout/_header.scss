@@ -1,13 +1,7 @@
-// /* header bar */
-
 header {
   background-color: $green;
   height: 15vh;
   padding-top: 5vh;
-
-  &.barcelona {
-    background-color: $orange;
-  }
 
   .inner {
     display: flex;
@@ -33,5 +27,11 @@ header {
     .logo {
       margin-right: 2.5vw;
     }
+  }
+}
+
+.barcelona {
+  header {
+    background-color: $orange;
   }
 }

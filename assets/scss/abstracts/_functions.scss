@@ -1,31 +1,25 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass functions.
-// -----------------------------------------------------------------------------
-// TODO: need to understand this file
-
-/// Native `url(..)` function wrapper
-/// @param {String} $base - base URL for the asset
-/// @param {String} $type - asset type folder (e.g. `fonts/`)
-/// @param {String} $path - asset path
-/// @return {Url}
-@function asset($base, $type, $path) {
-  @return url($base + $type + $path);
+// Grid column width
+@function column-width-null($numberColumns, $numberGutters){
+  $column-width: calc((((90vw - (3 * 10px)) / 4) * #{$numberColumns}) + ((#{$numberGutters} - 1) * 10px));
+  @return $column-width;
 }
 
-/// Returns URL to an image based on its path
-/// @param {String} $path - image path
-/// @param {String} $base [$base-url] - base URL
-/// @return {Url}
-/// @require $base-url
-@function image($path, $base: $base-url) {
-  @return asset($base, 'images/', $path);
+@function column-width-small($numberColumns, $numberGutters){
+  $column-width: calc((((90vw - (5 * 15px)) / 6) * #{$numberColumns}) + ((#{$numberGutters}) * 15px));
+  @return $column-width;
 }
 
-/// Returns URL to a font based on its path
-/// @param {String} $path - font path
-/// @param {String} $base [$base-url] - base URL
-/// @return {Url}
-/// @require $base-url
-@function font($path, $base: $base-url) {
-  @return asset($base, 'fonts/', $path);
+@function column-width-medium($numberColumns, $numberGutters){
+  $column-width: calc((((90vw - (7 * 20px)) / 8) * #{$numberColumns}) + ((#{$numberGutters}) * 20px));
+  @return $column-width;
+}
+
+@function column-width-large($numberColumns, $numberGutters){
+  $column-width: calc((((90vw - (11 * 30px)) / 12) * #{$numberColumns}) + ((#{$numberGutters}) * 30px));
+  @return $column-width;
+}
+
+@function column-width-extreme($numberColumns, $numberGutters){
+  $column-width: calc((((#{$max-width} - (11 * 30px)) / 12) * #{$numberColumns}) + ((#{$numberGutters}) * 30px));
+  @return $column-width;
 }

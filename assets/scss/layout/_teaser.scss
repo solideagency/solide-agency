@@ -1,0 +1,91 @@
+// Layout
+.teaser {
+  background-color: $green;
+  height: calc(100vh - 15vh - 10vh);
+  margin-bottom: 15vh;
+
+  @media screen and (min-width: map-get($breakpoints, medium)){
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      height: calc(100vh - 15vh - 10vh + 5.5vh);
+
+      .call-to-action {
+        width: column-width-medium(4, 3);
+      }
+
+      .city-images {
+        width: column-width-medium(3, 2);
+        align-self: flex-end;
+      }
+    }
+  }
+
+  @media screen and (min-width: map-get($breakpoints, large)){
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      height: calc(100vh - 15vh - 10vh + 5.5vh);
+
+      .call-to-action {
+        width: column-width-large(6, 5);
+      }
+
+      .city-images {
+        width: column-width-large(5, 4);
+        align-self: flex-end;
+      }
+    }
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, extreme)){
+    .inner {
+      .call-to-action {
+        width: column-width-extreme(6, 5);
+      }
+
+      .city-images {
+        width: column-width-extreme(5, 4);
+      }
+    }
+  }
+}
+
+// General settings
+.teaser {
+  h1 {
+    padding-top: 5vh;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      padding-top: 10vh;
+    }
+  }
+}
+
+// Change background
+.barcelona .teaser {
+  background-color: $orange;
+}
+
+// City images
+.city-images {
+  span:last-of-type::before {
+    content: "Barcelona";
+    opacity: 0.5;
+    margin-right: .45rem;
+    text-decoration: line-through;
+  }
+
+  > div.barcelona {
+    display: none;
+
+    span:last-of-type::before {
+      content: "Amsterdam";
+    }
+  }
+
+  img {
+    margin-top: 2.5vh;
+    width: 100%;
+  }
+}

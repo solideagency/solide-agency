@@ -1,7 +1,4 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
+// Reset
 html {
   box-sizing: border-box;
 }
@@ -23,6 +20,18 @@ body {
   }
 }
 
-// *:target {
-//   padding-top: 20vh;
-// }
+// Offset
+header .container,
+main .container,
+footer .container {
+  max-width: $max-width;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 90vw;
+
+  @media only screen and (min-width: map-get($breakpoints, extreme)){ /* 1200 + 120 = 1320px */
+    margin-left: 0;
+    margin-left: calc((100vw - #{$max-width})/2);
+    margin-right: calc((100vw - #{$max-width})/2);
+  }
+}

@@ -1,0 +1,34 @@
+.barcelona {
+  h1 {
+    color: $black;
+  }
+
+  h2 {
+    color: $black;
+  }
+
+  // strong {
+  //   transition: .3s;
+  //   box-shadow: inset 0px -15px 5px -5px rgba($green, 0.6);
+  // }
+
+  header {
+    h1 {
+      color: $white;
+    }
+  }
+
+  .teaser {
+    h1 {
+      color: $white;
+    }
+
+    * {
+      color: $white;
+    }
+  }
+
+  p, a, button, strong, em, input, span {
+    color: $black;
+  }
+}
