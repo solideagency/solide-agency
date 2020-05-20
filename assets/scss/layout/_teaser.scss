@@ -1,27 +1,31 @@
 // Layout
 .teaser {
   background-color: $green;
-  height: calc(100vh - 15vh - 10vh);
-  margin-bottom: 15vh;
+  height: calc(100vh - 15vh - 15vh);
+  margin-bottom: 10em;
 
   @media screen and (min-width: map-get($breakpoints, medium)){
+    height: calc(100vh - 15vh - 25vh);
+
     .inner {
       display: flex;
       justify-content: space-between;
-      height: calc(100vh - 15vh - 10vh + 5.5vh);
+      height: calc(100vh - 15vh - 25vh + 5.5vh);
 
       .call-to-action {
-        width: column-width-medium(4, 3);
+        width: column-width-medium(4, 4);
       }
 
       .city-images {
-        width: column-width-medium(3, 2);
+        width: column-width-medium(3, 3);
         align-self: flex-end;
       }
     }
   }
 
   @media screen and (min-width: map-get($breakpoints, large)){
+    height: calc(100vh - 15vh - 10vh);
+
     .inner {
       display: flex;
       justify-content: space-between;

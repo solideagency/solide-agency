@@ -1,5 +1,47 @@
+.projects {
+  &::before {
+    content:"";
+    width: 100vw;
+    min-height: 250px;
+    position: absolute;
+    left: 0;
+    margin-top: -12.5em;
+    z-index: -1;
+    background-image: url('~@/assets/images/our-work.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      margin-top: -10em;
+    }
+  }
+}
+
 .project {
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(10, 9);
+    margin-left: column-width-large(1, 1);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, extreme)){
+    width: column-width-extreme(10, 9);
+    margin-left: column-width-extreme(1, 1);
+  }
+
   img {
     width: 100%;
+  }
+}
+
+.barcelona {
+  .projects {
+    &::before {
+      background-image: url('~@/assets/images/our-work.svg');
+    }
   }
 }

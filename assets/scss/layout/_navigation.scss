@@ -6,8 +6,12 @@ nav {
   }
 
   a {
-    margin-right: 1em;
+    margin-right: .1em;
     padding: .25em;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      margin-right: 1em;
+    }
 
     &:hover {
       background-color: $orange;

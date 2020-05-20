@@ -49,8 +49,8 @@ p, a, button, strong, em, input, span {
   }
 }
 
-.label {
-  @include font-size($font-size-label);
+.caption {
+  @include font-size($font-size-caption);
 }
 
 nav {

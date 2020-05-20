@@ -26,43 +26,45 @@
   // Header big
   $font-size-header-big: (
     null    : 1.75rem,
-    'medium': 2.813rem
+    'medium': 2.250rem,
+    'large': 2.813rem
   );
 
   // Header medium
   $font-size-header-medium: (
     null    : 1.44rem,
-    'medium': 2.19rem
+    'large': 2.19rem
   );
 
   // Header small
   $font-size-header-small: (
     null    : 1rem,
-    'medium': 1.125rem
+    'large': 1.125rem
   );
 
   // CTA big
   $font-size-cta-big: (
     null    : 1rem,
-    'medium': 1.5rem
+    'medium': 1.3125rem,
+    'large': 1.5rem
   );
 
   // CTA small
   $font-size-cta-small: (
     null    : 1rem,
-    'medium': 1.125rem
+    'large': 1.125rem
   );
 
   // Text big
   $font-size-text-big: (
     null    : 1.25rem,
-    'medium': 1.375rem
+    'large': 1.375rem
   );
 
   // Text small
   $font-size-text-small: (
     null    : 1rem,
-    'medium': 1.125rem
+    'large': 1.125rem
   );
 
   // Menu
@@ -71,16 +73,10 @@
   );
 
   // Caption
-  // $font-size-caption: (
-  //   null    : 1rem
-  // );
-
-  // Label
-  $font-size-label: (
-    null    : 0.8125rem,
-    'medium': 1.25rem
+  $font-size-caption: (
+    null    : 0.875rem,
+    'large': 1.25rem
   );
-
 
 
 // Colors
@@ -97,8 +93,8 @@
 
 // Breakpoints
   $breakpoints: (
-    'small': 48em, /* 768px */
-    'medium': 62em, /* 992px */
-    'large': 75em, /* 1200px */
-    'extreme': 89.063em, /* 1200 + 120 = 1320px */
+    'small': 48em, /* 768px iPad Portrait */
+    'medium': 64em, /* 1024px - iPad Landscape */
+    'large': 80em, /* 1280px - 13 inch */
+    'extreme': 90em, /* 1440px - 15 inch */
   );

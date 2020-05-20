@@ -3,8 +3,8 @@
     <div class="project" v-for="project in this.projects">
       <img :src="(project.headerImageURL)" :alt="(project.headerImageAlt)"/>
       <h1>{{project.title}}</h1>
-      <p class="label">{{project.client}}</p>
-      <p class="service label" v-for="service in project.services">{{service.title.value}}</p>
+      <p class="caption">{{project.client}}</p>
+      <p class="service caption" v-for="service in project.services">{{service.title.value}}</p>
     </div>
   </section>
 </template>
