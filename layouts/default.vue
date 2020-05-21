@@ -4,7 +4,9 @@
       <div class="container">
         <div class="inner">
           <div>
-            <a class="logo" href="/"><h1>Sólide Agency</h1></a>
+            <nuxt-link class="logo" to="/">
+              <h1>Sólide Agency</h1>
+            </nuxt-link>
             <navigationItems/>
           </div>
           <label class="switch">
