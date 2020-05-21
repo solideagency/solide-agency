@@ -58,6 +58,11 @@ export default {
     }
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes: [
+      '/project/retailmade',
+      '/project/de-film-als-een-kroket',
+      '/project/sign-language-coffee-bar'
+    ]
   }
 }
