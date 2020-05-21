@@ -1,6 +1,6 @@
 <template>
   <section class="call-to-action">
-    <div v-for="item in this.callToActions">
+    <div v-for="item in this.callToActions" :class="'cta-' + (item.link.toLowerCase().replace(/\s/g, '-'))">
       <div class="text" v-html="item.title"></div>
       <a :href="'/' + (item.link.toLowerCase().replace(/\s/g, '-'))">
         <span class="cta">{{item.cta}}</span>

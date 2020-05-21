@@ -20,4 +20,23 @@
     background-size: contain;
     background-position: bottom;
   }
+
+  .cta-contact {
+    text-align: center;
+
+    @media screen and (min-width: map-get($breakpoints, medium)){
+      width: column-width-medium(4, 3);
+      margin-left: column-width-medium(2, 2);
+    }
+
+    @media screen and (min-width: map-get($breakpoints, large)){
+      width: column-width-large(6, 5);
+      margin-left: column-width-large(3, 3);
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, extreme)){
+      width: column-width-extreme(6, 5);
+      margin-left: column-width-extreme(3, 3);
+    }
+  }
 }
