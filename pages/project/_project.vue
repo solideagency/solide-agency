@@ -10,13 +10,13 @@
 export default {
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
-      return store.state.projectItems.some(project =>
+      return store.state.projectSlug.some(project =>
         project.slug === params.project
       )
   },
   computed: {
     projects: function(){
-      return this.$store.state.projectItems.filter(project =>
+      return this.$store.state.projectSlug.filter(project =>
         project.slug === this.$route.params.project
       )
     }

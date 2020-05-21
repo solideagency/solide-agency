@@ -41,6 +41,7 @@ export default {
   },
   async fetch ({store, params}) {
     return Promise.all([
+      store.dispatch("nuxtServerInit"),
       store.dispatch("calltoaction/getCallToActions"),
       store.dispatch("navigation/getNavigation"),
       store.dispatch("cityimage/getCityImages"),
