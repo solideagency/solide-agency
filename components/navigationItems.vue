@@ -3,12 +3,12 @@
     <ul>
       <div v-for="item in this.items">
         <p>test</p>
-        <!-- <nuxt-link
+        <nuxt-link
         :key="item.name"
         v-if="item.name !== 'Home'"
         :to="(item.name.toLowerCase().replace(/\s/g, '-'))">
         {{ item.name }}
-        </nuxt-link> -->
+        </nuxt-link>
       </div>
       <nuxt-link to="/work">Work</nuxt-link>
     </ul>
