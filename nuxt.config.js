@@ -59,28 +59,10 @@ export default {
   },
   generate: {
     fallback: true,
-    // routes: [
-    //   '/project/retailmade',
-    //   '/project/de-film-als-een-kroket',
-    //   '/project/sign-language-coffee-bar'
-    // ]
-    routes () {
-      // return axios.get('https://my-api/users')
-      //   .then((res) => {
-      //     return res.data.map((user) => {
-      //       return '/users/' + user.id
-      //     })
-      //   })
-      return this.$deliveryClient
-      .items()
-      .type('project')
-      .toPromise()
-      .then(response => {
-        commit('setProjectSlug', response.items.map(item => ({
-          slug: 'project/' + item.untitled_url_slug.value
-        })))
-      });
-
-    }
+    routes: [
+      '/project/retailmade',
+      '/project/de-film-als-een-kroket',
+      '/project/sign-language-coffee-bar'
+    ]
   }
 }
