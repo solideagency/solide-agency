@@ -40,3 +40,11 @@
     }
   }
 }
+
+.barcelona {
+  .teaser + div {
+    .cta::after {
+      background-image: url('~@/assets/images/arrow-black.svg');
+    }
+  }
+}
