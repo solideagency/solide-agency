@@ -10,7 +10,6 @@
 export default {
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
-    console.log(store.state)
       return store.state.projectSlug.some(project =>
         project.slug === params.project
       )

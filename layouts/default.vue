@@ -5,7 +5,7 @@
         <div class="inner">
           <div>
             <a class="logo" href="/"><h1>Sólide Agency</h1></a>
-            <navigation/>
+            <navigationItems/>
           </div>
           <label class="switch">
             <input type="checkbox">
@@ -22,11 +22,11 @@
 
 <script>
 import { mapMutations } from 'vuex'
-import navigation from '~/components/navigation.vue'
+import navigationItems from '~/components/navigationItems.vue'
 
 export default {
   components: {
-    navigation
+    navigationItems
   },
   mounted(){
     var switchButton = document.querySelector('.switch input');
@@ -45,11 +45,6 @@ export default {
         document.querySelector('.city-images .barcelona').style.display = "none";
       }
     })
-  },
-  async fetch ({store, params}) {
-    return Promise.all([
-      store.dispatch("getNavigation")
-    ])
   }
 }
 </script>

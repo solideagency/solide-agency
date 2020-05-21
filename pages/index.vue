@@ -29,6 +29,7 @@ import cityimage from '~/components/cityimages.vue'
 import keyvalue from '~/components/keyvalue.vue'
 import service from '~/components/service.vue'
 import projectpreview from '~/components/projectpreview.vue'
+import navigationItems from '~/components/navigationItems.vue'
 
 
 export default {
@@ -37,7 +38,8 @@ export default {
     cityimage,
     keyvalue,
     service,
-    projectpreview
+    projectpreview,
+    navigationItems
   },
   async fetch ({store, params}) {
     return Promise.all([
