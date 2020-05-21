@@ -1,16 +1,10 @@
 <template>
   <nav>
     <ul>
-      <div v-for="item in this.items">
-        <p>test</p>
-        <nuxt-link
-        :key="item.name"
-        v-if="item.name !== 'Home'"
-        :to="(item.name.toLowerCase().replace(/\s/g, '-'))">
-        {{ item.name }}
-        </nuxt-link>
-      </div>
       <nuxt-link to="/work">Work</nuxt-link>
+      <nuxt-link to="/services">Services</nuxt-link>
+      <nuxt-link to="/about-us">About us</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
     </ul>
   </nav>
 </template>
