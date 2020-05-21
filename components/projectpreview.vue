@@ -1,11 +1,11 @@
 <template>
   <section class="projects">
-    <div class="project" v-for="project in this.projects">
+    <div class="project" v-for="project in this.projects"><a :href="'project/' + (project.slug)">
       <img :src="(project.headerImageURL)" :alt="(project.headerImageAlt)"/>
       <h1>{{project.title}}</h1>
       <p class="caption">{{project.client}}</p>
       <p class="service caption" v-for="service in project.services">{{service.title.value}}</p>
-    </div>
+    </a></div>
   </section>
 </template>
 
@@ -14,9 +14,9 @@
     props: ['limit'],
     computed: {
       projects: function(){
-        return this.$store.state.projects.length > this.limit
-        ? this.$store.state.projects.slice(0, this.limit)
-        : this.$store.state.projects;
+        return this.$store.state.project.projectItems.length > this.limit
+        ? this.$store.state.project.projectItems.slice(0, this.limit)
+        : this.$store.state.project.projectItems;
       }
     }
   }

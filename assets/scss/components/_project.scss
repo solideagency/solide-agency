@@ -1,13 +1,13 @@
 .projects {
   &::before {
     content:"";
-    width: 100vw;
+    width: 110vw;
     min-height: 250px;
     position: absolute;
-    left: 0;
-    margin-top: -12.5em;
+    left: -5vw;
+    margin-top: -14em;
     z-index: -1;
-    background-image: url('~@/assets/images/our-work.svg');
+    background-image: url('~@/assets/images/our-work-dark-mode-full.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -15,10 +15,42 @@
     @media only screen and (min-width: map-get($breakpoints, medium)){
       margin-top: -10em;
     }
+
+    @media only screen and (min-width: map-get($breakpoints, extreme)){
+      width: $max-width;
+      left: calc((100vw - #{$max-width})/2)
+    }
   }
 }
 
 .project {
+  margin-top: 5em;
+
+  h1 {
+    margin-top: .25em;
+    margin-bottom: .5em;
+  }
+
+  p {
+    display: inline-block;
+
+    &:first-of-type::after {
+      content:"";
+      height: 3px;
+      width: 25px;
+      display: inline-block;
+      position: relative;
+      top: -5px;
+      margin: 0 .75em;
+      background-color: $green;
+    }
+  }
+
+  .service:nth-of-type(2n)::after {
+    content: ", ";
+    margin-right: .25rem;
+  }
+
   @media only screen and (min-width: map-get($breakpoints, medium)){
 
   }
@@ -41,7 +73,13 @@
 .barcelona {
   .projects {
     &::before {
-      background-image: url('~@/assets/images/our-work.svg');
+      background-image: url('~@/assets/images/our-work-light-mode-full.svg');
+    }
+
+    p {
+      &:first-of-type::after {
+        background-color: $orange;
+      }
     }
   }
 }

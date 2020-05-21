@@ -11,7 +11,7 @@
     props: ['disable'],
     computed: {
       services: function(){
-        return this.$store.state.services.filter(value =>
+        return this.$store.state.service.services.filter(value =>
           value.name !== this.disable
         )
       }

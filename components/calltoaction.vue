@@ -14,7 +14,7 @@
     props: ['linkto', 'limit'],
     computed: {
       callToActions: function(){
-        return this.$store.state.callToActions.filter(cta =>
+        return this.$store.state.calltoaction.callToActions.filter(cta =>
           cta.link == this.linkto
         )
       }

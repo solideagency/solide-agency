@@ -9,7 +9,7 @@
     props: ['page'],
     computed: {
       keyValues: function(){
-        return this.$store.state.keyValues.filter(value =>
+        return this.$store.state.keyvalue.keyValues.filter(value =>
           Object.values(value.sitemap)[0] == this.page
         )
       }

@@ -41,12 +41,12 @@ export default {
   },
   async fetch ({store, params}) {
     return Promise.all([
-      store.dispatch("getCallToActions"),
-      store.dispatch("getNavigation"),
-      store.dispatch("getCityImages"),
-      store.dispatch("getKeyValues"),
-      store.dispatch("getServices"),
-      store.dispatch("getProjects")
+      store.dispatch("calltoaction/getCallToActions"),
+      store.dispatch("navigation/getNavigation"),
+      store.dispatch("cityimage/getCityImages"),
+      store.dispatch("keyvalue/getKeyValues"),
+      store.dispatch("service/getServices"),
+      store.dispatch("project/getProjects")
     ])
   },
   head () {
