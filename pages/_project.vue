@@ -19,7 +19,7 @@ export default {
   computed: {
     projects: function(){
       return this.$store.state.projectSlug.filter(project =>
-        project.slug === this.$route.params.id
+        project.slug === this.$route.params.project
       )
     }
   }
