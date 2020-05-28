@@ -11,14 +11,33 @@
     color: $black;
   }
 
-  // strong {
-  //   transition: .3s;
-  //   box-shadow: inset 0px -15px 5px -5px rgba($green, 0.6);
-  // }
+  .logo {
+    h1 {
+      color: $black;
+    }
+  }
+
+  .page-index {
+    .logo {
+      h1 {
+        color: $white;
+      }
+    }
+
+    nav {
+      a {
+        color: $white;
+      }
+
+      a:hover {
+        color: $white;
+      }
+    }
+  }
 
   nav {
     a {
-      color: $white;
+      color: $black;
     }
 
     a:hover {

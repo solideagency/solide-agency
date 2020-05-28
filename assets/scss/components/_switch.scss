@@ -48,3 +48,17 @@
     transition: .4s;
   }
 }
+
+
+
+.barcelona {
+  .page-index {
+    .slider {
+      background-color: $grey;
+    }
+  }
+
+  .slider {
+    background-color: $white;
+  }
+}

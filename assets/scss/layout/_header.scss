@@ -1,5 +1,10 @@
+.page-index {
+  header {
+    background-color: $green;
+  }
+}
+
 header {
-  background-color: $green;
   height: 15vh;
   padding-top: 5vh;
 
@@ -31,7 +36,9 @@ header {
 }
 
 .barcelona {
-  header {
-    background-color: $orange;
+  .page-index {
+    header {
+      background-color: $orange;
+    }
   }
 }
