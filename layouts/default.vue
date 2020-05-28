@@ -1,5 +1,5 @@
 <template>
-  <div :class="'page-' + this.$nuxt.$route.path">
+  <div :class="'page-' + this.routeName">
     <header>
       <div class="container">
         <div class="inner">
@@ -54,7 +54,6 @@ export default {
     navigationItems
   },
   mounted(){
-    console.log(this.$nuxt.$route)
     var switchButton = document.querySelector('.switch input');
 
     var bodyBackground = document.querySelector('body');
@@ -71,6 +70,11 @@ export default {
         document.querySelector('.city-images .barcelona').style.display = "none";
       }
     })
+  },
+  computed: {
+    routeName: function(){
+      return this.$nuxt.$route.name
+    }
   }
 }
 </script>
