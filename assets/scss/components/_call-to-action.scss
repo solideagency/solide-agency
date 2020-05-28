@@ -42,9 +42,13 @@
 }
 
 .barcelona {
-  .teaser + div {
+  .cta::after {
+    background-image: url('~@/assets/images/arrow-black.svg');
+  }
+
+  .teaser {
     .cta::after {
-      background-image: url('~@/assets/images/arrow-black.svg');
+      background-image: url('~@/assets/images/arrow.svg');
     }
   }
 }
