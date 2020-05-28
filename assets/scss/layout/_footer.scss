@@ -86,4 +86,8 @@ footer {
   a {
     margin-right: 1em;
   }
+
+  img {
+    filter: brightness(0) invert(1);
+  }
 }

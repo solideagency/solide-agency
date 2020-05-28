@@ -35,4 +35,10 @@
   p, a, button, strong, em, input, span {
     color: $black;
   }
+
+  .follow-us {
+    img {
+      filter: none;
+    }
+  }
 }

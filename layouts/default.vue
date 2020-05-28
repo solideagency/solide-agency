@@ -38,7 +38,7 @@
       <div class="follow-us">
         <h3>Follow us</h3>
         <a target="_blank" class="small-text" v-for="item in $store.state.socialmedia.socialMediaAccounts" :href="item.url">
-          <img :src="require(`~/assets/images/${item.platform}.svg`)" alt="social media icon"/>
+          <img :src="require(`~/assets/images/${item.platform}.svg`)" :alt="'social media icon ' + item.platform"/>
         </a>
       </div>
     </footer>
