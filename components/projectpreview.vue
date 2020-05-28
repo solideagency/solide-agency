@@ -1,7 +1,7 @@
 <template>
   <section class="projects">
     <div class="project" v-for="project in this.projects">
-      <nuxt-link :to="(project.slug)">
+      <nuxt-link :to="'work/' + (project.slug)">
         <img :src="(project.headerImageURL)" :alt="(project.headerImageAlt)"/>
         <h1>{{project.title}}</h1>
         <p class="caption">{{project.client}}</p>
