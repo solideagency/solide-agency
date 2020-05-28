@@ -10,7 +10,7 @@
       <div class="inner">
         <keyvalue page="Home"/>
         <service disable="Prepaid cards"/>
-        <projectpreview limit="3"/>
+        <!-- <projectpreview limit="3"/> -->
         <calltoaction linkto="Contact"/>
       </div>
     </div>
