@@ -57,12 +57,13 @@ p, a, button, strong, em, input, span {
 nav {
   a {
     @include font-size($font-size-menu);
-    color: $white !important;
+    color: $white;
     text-decoration: none;
     font-weight: 200;
 
     &:hover {
       background-color: $orange;
+      color: $grey;
     }
   }
 }

@@ -16,6 +16,17 @@
   //   box-shadow: inset 0px -15px 5px -5px rgba($green, 0.6);
   // }
 
+  nav {
+    a {
+      color: $white;
+    }
+
+    a:hover {
+      background-color: $green;
+      color: $grey;
+    }
+  }
+
   header {
     h1 {
       color: $white;

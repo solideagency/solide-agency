@@ -14,15 +14,8 @@ nav {
     }
 
     &:hover {
+      color: $black;
       background-color: $orange;
-    }
-  }
-}
-
-.barcelona {
-  nav {
-    a:hover {
-      background-color: $green;
     }
   }
 }
