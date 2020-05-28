@@ -1,5 +1,5 @@
 <template>
-  <div :class="'page-' + this.$nuxt.$route.name">
+  <div :class="'page-' + this.$nuxt.$route.path">
     <header>
       <div class="container">
         <div class="inner">
@@ -54,6 +54,7 @@ export default {
     navigationItems
   },
   mounted(){
+    console.log(this.$nuxt.$route)
     var switchButton = document.querySelector('.switch input');
 
     var bodyBackground = document.querySelector('body');
