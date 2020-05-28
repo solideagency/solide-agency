@@ -60,9 +60,9 @@ export default {
   generate: {
     fallback: true,
     routes: [
-      '/project/retailmade',
-      '/project/de-film-als-een-kroket',
-      '/project/sign-language-coffee-bar'
+      '/retailmade',
+      '/de-film-als-een-kroket',
+      '/sign-language-coffee-bar'
     ]
   }
 }
