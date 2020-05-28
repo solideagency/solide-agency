@@ -1,0 +1,89 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5em;
+  margin-bottom: 2.5em;
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    flex-wrap: nowrap;
+  }
+
+  div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      width: max-content;
+    }
+
+    h3 {
+      margin-bottom: 1.25em;
+    }
+
+    .small-text {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.contact {
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    width: column-width-medium(2, 1);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(3, 2);
+  }
+  //
+  // @media only screen and (min-width: map-get($breakpoints, extreme)){
+  //   width: column-width-extreme(10, 9);
+  // }
+}
+
+.who-we-are {
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    width: column-width-medium(2, 1);
+    margin-left: column-width-medium(0, 1);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(2, 1);
+    margin-left: column-width-large(3, 4);
+  }
+}
+
+.what-we-do {
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    width: column-width-medium(2, 1);
+    margin-left: column-width-medium(0, 1);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(2, 1);
+    margin-left: column-width-large(0, 1);
+  }
+}
+
+.follow-us {
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  @media only screen and (min-width: map-get($breakpoints, medium)){
+    width: column-width-medium(2, 1);
+    margin-left: column-width-medium(0, 1);
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, large)){
+    width: column-width-large(2, 1);
+    margin-left: column-width-large(0, 1);
+  }
+
+  h3 {
+    width: 90vw;
+  }
+
+  a {
+    margin-right: 1em;
+  }
+}

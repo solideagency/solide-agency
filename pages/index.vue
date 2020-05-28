@@ -1,24 +1,20 @@
 <template>
   <div>
-    <div class="teaser">
-      <div class="container">
-        <div class="inner">
-          <calltoaction limit="1" linkto="Services"/>
-          <cityimage/>
-        </div>
+    <div class="container teaser">
+      <div class="inner">
+        <calltoaction limit="1" linkto="Services"/>
+        <cityimage/>
       </div>
     </div>
-    <div>
-      <div class="container">
-        <div class="inner">
-          <keyvalue page="Home"/>
-          <service disable="Prepaid cards"/>
-          <projectpreview limit="3"/>
-          <calltoaction linkto="Contact"/>
-        </div>
+    <div class="container">
+      <div class="inner">
+        <keyvalue page="Home"/>
+        <service disable="Prepaid cards"/>
+        <projectpreview limit="3"/>
+        <calltoaction linkto="Contact"/>
       </div>
     </div>
-  </div>
+    </div>
   </div>
 </template>
 
@@ -49,7 +45,10 @@ export default {
       store.dispatch("cityimage/getCityImages"),
       store.dispatch("keyvalue/getKeyValues"),
       store.dispatch("service/getServices"),
-      store.dispatch("project/getProjects")
+      store.dispatch("project/getProjects"),
+      store.dispatch("company/getCompanyDetails"),
+      store.dispatch("socialmedia/getSocialMediaAccounts")
+
     ])
   },
   head () {

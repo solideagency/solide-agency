@@ -1,7 +1,9 @@
 <template>
-  <div class="inner">
-    <div class="project" v-for="project in this.projects">
-      <h1>{{project.title}}</h1>
+  <div class="container">
+    <div class="inner">
+      <div class="project" v-for="project in this.projects">
+        <h1>{{project.title}}</h1>
+      </div>
     </div>
   </div>
 </template>
