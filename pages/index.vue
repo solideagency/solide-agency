@@ -10,7 +10,7 @@
       <div class="inner">
         <keyvalue page="Home"/>
         <service disable="Prepaid cards"/>
-        <!-- <projectpreview limit="3"/> -->
+        <projectpreview limit="3"/>
         <calltoaction linkto="Contact"/>
       </div>
     </div>
@@ -36,9 +36,8 @@ export default {
   },
   async fetch ({store, params}) {
     return Promise.all([
-      // store.dispatch("nuxtServerInit"),
+      store.dispatch("nuxtServerInit"),
       store.dispatch("calltoaction/getCallToActions"),
-      store.dispatch("navigation/getNavigation"),
       store.dispatch("cityimage/getCityImages"),
       store.dispatch("keyvalue/getKeyValues"),
       store.dispatch("service/getServices"),
