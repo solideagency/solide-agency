@@ -1,5 +1,9 @@
 .page-work {
   .projects {
-    margin-top: 20vh;
+    margin-top: 30vh;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      margin-top: 40vh;
+    }
   }
 }
