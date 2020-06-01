@@ -60,19 +60,35 @@
     * {
       color: $white;
     }
+
+    strong::after {
+      animation: stretchRightBarcelona 0.5s forwards ease-out;
+    }
   }
 
   p, a, button, strong, em, input, span {
     color: $black;
   }
 
-  strong::after {
-    animation: stretchRightBarcelona 0.5s forwards ease-out;
+  footer {
+    a {
+      &:hover {
+        color: $green;
+      }
+    }
   }
 
   .follow-us {
     img {
       filter: none;
+
+      &:hover {
+        filter: invert(24%) sepia(14%) saturate(3753%) hue-rotate(130deg) brightness(91%) contrast(101%);
+      }
+    }
+
+    a:hover {
+      background-color: transparent;
     }
   }
 }
