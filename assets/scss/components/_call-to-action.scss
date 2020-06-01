@@ -9,17 +9,33 @@
     }
   }
 
+  a {
+
+    .cta::after {
+      transform: translate(0);
+      transition: transform .2s ease;
+    }
+
+    &:hover {
+
+      .cta::after {
+        transform: translate(20px, 0);
+      }
+    }
+  }
+
   .cta::after {
     content:"";
     width: 100px;
     height: 1rem;
-    margin-left: .25rem;
+    margin-left: 0rem;
     display: inline-block;
     background-image: url('~@/assets/images/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
   }
+
 
   .cta-contact {
     text-align: center;
