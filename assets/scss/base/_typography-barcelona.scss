@@ -66,6 +66,10 @@
     color: $black;
   }
 
+  strong::after {
+    animation: stretchRightBarcelona 0.5s forwards ease-out;
+  }
+
   .follow-us {
     img {
       filter: none;
