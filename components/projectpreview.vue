@@ -2,7 +2,9 @@
   <section class="projects">
     <div class="project" v-for="project in this.projects">
       <nuxt-link :to="'work/' + (project.slug)">
-        <img :src="(project.headerImageURL)" :alt="(project.headerImageAlt)"/>
+        <div class="container-img">
+          <img :src="(project.headerImageURL)" :alt="(project.headerImageAlt)"/>
+        </div>
         <h1>{{project.title}}</h1>
         <p class="caption">{{project.client}}</p>
         <p class="service caption" v-for="service in project.services">{{service.title.value}}</p>
