@@ -1,6 +1,6 @@
 <template>
   <div :class="'page-' + this.routeName">
-    <header>
+    <header class="first">
       <div class="container">
         <div class="inner">
           <div>
@@ -77,10 +77,18 @@ export default {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
+      console.log(currentScrollPos)
+
       if (prevScrollpos > currentScrollPos) {
         document.querySelector("header").classList.remove("nav-up");
-      } else if (prevScrollpos > 50){
+      }
+      else if (currentScrollPos > 100){
         document.querySelector("header").classList.add("nav-up");
+        document.querySelector("header").classList.remove("first");
+      }
+
+      if (currentScrollPos < 100) {
+        document.querySelector("header").classList.add("first");
       }
       prevScrollpos = currentScrollPos;
     }

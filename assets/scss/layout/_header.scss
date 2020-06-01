@@ -9,7 +9,7 @@ header {
   top: 0;
   z-index: 1;
   height: 10vh;
-  padding-top: 5vh;
+  padding-top: 2.5vh;
   transition: top 0.2s ease-in-out;
   background-color: $black;
 
@@ -38,6 +38,10 @@ header {
       margin-right: 2.5vw;
     }
   }
+}
+
+.first {
+  padding-top: 5vh;
 }
 
 .nav-up {
