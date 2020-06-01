@@ -5,8 +5,13 @@
 }
 
 header {
-  height: 15vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 10vh;
   padding-top: 5vh;
+  transition: top 0.2s ease-in-out;
+  background-color: $black;
 
   .inner {
     display: flex;
@@ -35,7 +40,15 @@ header {
   }
 }
 
+.nav-up {
+  top: -15vh;
+}
+
 .barcelona {
+  header {
+    background-color: $grey;
+  }
+
   .page-index {
     header {
       background-color: $orange;

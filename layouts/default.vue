@@ -54,6 +54,7 @@ export default {
     navigationItems
   },
   mounted(){
+    //switch
     var switchButton = document.querySelector('.switch input');
     var bodyBackground = document.querySelector('body');
 
@@ -71,6 +72,18 @@ export default {
         document.querySelector('.city-images .barcelona').style.display = "none";
       }
     })
+
+    //menu show only on scroll up
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector("header").classList.remove("nav-up");
+      } else if (prevScrollpos > 50){
+        document.querySelector("header").classList.add("nav-up");
+      }
+      prevScrollpos = currentScrollPos;
+    }
   },
   computed: {
     routeName: function(){
