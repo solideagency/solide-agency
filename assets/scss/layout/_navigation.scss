@@ -13,7 +13,7 @@ nav {
       margin-right: 1em;
     }
 
-    &:hover {
+    &:hover, &.nuxt-link-active {
       color: $black;
       background-color: $orange;
     }
@@ -22,7 +22,7 @@ nav {
 
 .page-index {
   nav {
-    a:hover {
+    a:hover, a.nuxt-link-active {
       color: $white;
     }
   }
