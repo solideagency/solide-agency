@@ -5,6 +5,12 @@
   height: calc(100vh - 15vh - 15vh);
   margin-bottom: 10em;
 
+  @media screen and (max-width: map-get($breakpoints, medium)){
+    .city-images {
+      transform: translate3d(0px, 0px, 0px) !important;
+    }
+  }
+
   @media screen and (min-width: map-get($breakpoints, medium)){
     height: calc(100vh - 15vh - 25vh);
 
