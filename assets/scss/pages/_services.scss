@@ -1,0 +1,25 @@
+.page-services {
+  main {
+    padding-top: 30vh; /* header */
+
+    h1 {
+      @media only screen and (min-width: map-get($breakpoints, medium)){
+        width: column-width-medium(7, 6);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        width: column-width-large(8, 7);
+        margin-left: column-width-large(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        width: column-width-extreme(8, 7);
+        margin-left: column-width-extreme(1, 1);
+      }
+    }
+
+    .process-title {
+      margin-top: 2.5em;
+    }
+  }
+}

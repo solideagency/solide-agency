@@ -77,7 +77,6 @@ export default {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-      console.log(currentScrollPos)
 
       if (prevScrollpos > currentScrollPos) {
         document.querySelector("header").classList.remove("nav-up");

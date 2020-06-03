@@ -1,19 +1,33 @@
 <template>
   <div class="container">
     <div class="inner">
-      <h1>Services</h1>
+      <keyvalue page="Services"/>
+      <principle/>
+      <h1 class="process-title">Our process</h1>
+      <processStep/>
     </div>
   </div>
 </template>
 
 <script>
+import keyvalue from '~/components/keyvalue.vue'
+import processStep from '~/components/processStep.vue'
+import principle from '~/components/principle.vue'
+
 export default {
   components: {
+    keyvalue,
+    processStep,
+    principle
   },
   async fetch ({store, params}) {
     return Promise.all([
       store.dispatch("company/getCompanyDetails"),
-      store.dispatch("socialmedia/getSocialMediaAccounts")
+      store.dispatch("socialmedia/getSocialMediaAccounts"),
+      store.dispatch("keyvalue/getKeyValues"),
+      store.dispatch("process_step/getOurProcessSteps"),
+      store.dispatch("principle/getPrinciples")
+
     ])
   },
   head () {

@@ -26,12 +26,16 @@
   'components/switch',
   'components/key-value',
   'components/project',
+  'components/principle',
+  'components/process',
   'components/call-to-action';
 
 
 // 5. Page-specific styles
 @import
-  'pages/work';
+  'pages/work',
+  'pages/services';
+
 
 // 6. Themes
 // 7. Vendors
