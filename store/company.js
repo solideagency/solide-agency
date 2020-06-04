@@ -20,10 +20,9 @@ export const actions = {
         address: item.address.value,
         email: item.email.value,
         phonenumber: item.phone_number.value,
+        secondphonenumber: item.second_phone_number.value,
         about: item.about_the_company.value,
-        culture: item.culture.value,
-        cultureImages: item.culture_images.value
-
+        culture: item.culture.value
       })))
     });
   }

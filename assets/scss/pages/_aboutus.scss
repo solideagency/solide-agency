@@ -1,0 +1,43 @@
+.page-about-us {
+  main .inner {
+    padding-top: 30vh; /* header */
+
+    > div {
+      margin-bottom: 7.5em;
+
+      &:first-of-type, &:last-of-type {
+        h1 {
+          @media only screen and (min-width: map-get($breakpoints, medium)){
+            width: column-width-medium(7, 6);
+          }
+
+          @media only screen and (min-width: map-get($breakpoints, large)){
+            width: column-width-large(8, 7);
+            margin-left: column-width-large(1, 1);
+          }
+
+          @media only screen and (min-width: map-get($breakpoints, extreme)){
+            width: column-width-extreme(8, 7);
+            margin-left: column-width-extreme(1, 1);
+          }
+        }
+
+        p {
+          @media only screen and (min-width: map-get($breakpoints, large)){
+            width: column-width-large(6, 5);
+            margin-left: column-width-large(1, 1);
+          }
+
+          @media only screen and (min-width: map-get($breakpoints, extreme)){
+            width: column-width-extreme(6, 5);
+            margin-left: column-width-extreme(1, 1);
+          }
+        }
+      }
+
+      p, .more-about {
+        margin-top: 2em;
+      }
+    }
+}
+}
