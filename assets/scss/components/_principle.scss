@@ -8,7 +8,7 @@
 
   @media only screen and (min-width: map-get($breakpoints, medium)){
     width: column-width-medium(7, 6);
-    column-gap: 20px;
+    column-gap: column-width-medium(1, 2);
   }
 
   @media only screen and (min-width: map-get($breakpoints, large)){
