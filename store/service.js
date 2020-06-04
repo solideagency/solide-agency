@@ -13,10 +13,13 @@ export const actions = {
     return this.$deliveryClient
     .items()
     .type('service')
+    .depthParameter(1)
     .toPromise()
     .then(response => {
+      console.log(response.items[0].products.value[1].title.value);
       context.commit('setServices', response.items.map(item => ({
-        name: item.title.value
+        name: item.title.value,
+        products: item.products.value
       })))
     });
   }

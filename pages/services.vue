@@ -5,6 +5,7 @@
       <principle/>
       <h1 class="process-title">Our process</h1>
       <processStep/>
+      <service disable="Prepaid cards"/>
     </div>
   </div>
 </template>
@@ -13,12 +14,15 @@
 import keyvalue from '~/components/keyvalue.vue'
 import processStep from '~/components/processStep.vue'
 import principle from '~/components/principle.vue'
+import service from '~/components/service.vue'
+
 
 export default {
   components: {
     keyvalue,
     processStep,
-    principle
+    principle,
+    service
   },
   async fetch ({store, params}) {
     return Promise.all([
@@ -26,8 +30,8 @@ export default {
       store.dispatch("socialmedia/getSocialMediaAccounts"),
       store.dispatch("keyvalue/getKeyValues"),
       store.dispatch("process_step/getOurProcessSteps"),
-      store.dispatch("principle/getPrinciples")
-
+      store.dispatch("principle/getPrinciples"),
+      store.dispatch("service/getServices")
     ])
   },
   head () {
