@@ -9,7 +9,7 @@
     <div class="container">
       <div class="inner">
         <keyvalue page="Home"/>
-        <service disable="Prepaid cards"/>
+        <service disable="Prepaid cards" pagename="Home"/>
         <projectpreview limit="3"/>
         <calltoaction linkto="Contact"/>
       </div>

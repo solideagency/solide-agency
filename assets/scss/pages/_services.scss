@@ -25,11 +25,30 @@
     .services {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
       margin-top: 7.5em;
       margin-bottom: 7.5em;
 
+      div {
+        margin-bottom: 2.5em;
+      }
+
+      .product {
+        margin-bottom: .75em;
+      }
+
+      .title + .product {
+        margin-top: 1.25em;
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, small)){
+        width: column-width-small(5, 5);
+        flex-direction: row;
+      }
+
       @media only screen and (min-width: map-get($breakpoints, medium)){
-        width: column-width-medium(7, 6);
+        margin-left: column-width-large(1, 1);
+        width: column-width-medium(6, 5);
       }
 
       @media only screen and (min-width: map-get($breakpoints, large)){
