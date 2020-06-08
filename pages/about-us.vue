@@ -121,8 +121,6 @@ export default {
         }
       }
 
-      console.log('flip');
-
       window.addEventListener('scroll', checkPosition);
       window.addEventListener('resize', init);
 
