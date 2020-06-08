@@ -12,7 +12,7 @@
           <img :src="(employee.image)" alt=""/>
         </div>
       </div>
-      <div>
+      <div class="two-places">
         <h1>We are in two places</h1>
         <p class="small-text" v-for="item in $store.state.company.companyDetails" v-html="item.culture"></p>
       </div>
