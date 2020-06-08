@@ -5,9 +5,9 @@
       <div class="employees">
         <h1>We are two people</h1>
         <div class="more-about">
-          <h3 v-for="employee in $store.state.employee.employees">More about {{employee.name}}</h3>
+          <h3 v-for="employee in $store.state.employee.employees" :class="employee.name">More about {{employee.name}}</h3>
         </div>
-        <div v-for="employee in $store.state.employee.employees" :class="employee.name">
+        <div v-for="employee in $store.state.employee.employees" :class="'employee ' + employee.name">
           <p class="small-text">{{employee.about}}</p>
           <img :src="(employee.image)" alt=""/>
         </div>
@@ -39,6 +39,26 @@ export default {
       store.dispatch("employee/getEmployees"),
       store.dispatch("calltoaction/getCallToActions")
     ])
+  },
+  mounted(){
+    var employees = document.querySelectorAll(".employee");
+    var navigation = document.querySelectorAll('.more-about h3');
+
+    navigation[0].classList.add('active');
+    employees[0].classList.add('active');
+
+    navigation.forEach(function(nav, index){
+      nav.addEventListener('click', function(){
+        var currentNav = document.querySelectorAll("h3.active");
+        currentNav[0].className = currentNav[0].className.replace(" active", "");
+        var currentEmployee = document.querySelectorAll(".employees div.active");
+        currentEmployee[0].className = currentEmployee[0].className.replace(" active", "");
+
+        nav.classList.add('active');
+        employees[index].classList.add('active');
+      })
+    })
+
   },
   head () {
     return {

@@ -1,6 +1,10 @@
 .employees {
 
   h1, p {
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      width: column-width-medium(4, 3);
+    }
+
     @media only screen and (min-width: map-get($breakpoints, large)){
       width: column-width-large(5, 4);
       margin-left: column-width-large(1, 1);
@@ -15,16 +19,36 @@
   .more-about {
     display: flex;
     justify-content: space-between;
+    width: max-content;
+
+    h3 {
+      padding: .25em;
+      margin-right: 2em;
+      cursor: pointer;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      width: column-width-medium(3, 3);
+      float: right;
+
+      h3 {
+        margin-right: 0;
+      }
+    }
 
     @media only screen and (min-width: map-get($breakpoints, large)){
-      width: column-width-medium(4, 3);
-      margin-right: column-width-medium(1, 1);
-      float: right;
+      width: column-width-large(4, 3);
+      margin-right: column-width-large(1, 1);
     }
 
     @media only screen and (min-width: map-get($breakpoints, extreme)){
       width: column-width-extreme(4, 3);
       margin-right: column-width-extreme(1, 1);
+    }
+
+    .active {
+      background-color: $green;
+      color: $black;
     }
   }
 
@@ -40,6 +64,23 @@
     @media only screen and (min-width: map-get($breakpoints, extreme)){
       width: column-width-extreme(10, 9);
       margin-left: column-width-extreme(1, 1);
+    }
+  }
+}
+
+.employee {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.barcelona {
+  .employees {
+    h3.active {
+      background-color: $orange;
+      color: $grey;
     }
   }
 }
