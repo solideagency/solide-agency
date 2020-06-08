@@ -84,7 +84,7 @@
 
 .nums-four:after {
   content: '>';
-  background: none;
+  background: none !important;
 }
 
 .nums-five:after {
@@ -200,3 +200,27 @@
 }
 
 @include num-keyframes('one', 10);
+
+.barcelona {
+  .flip {
+    .nums::before {
+      border-bottom: 2px solid white;
+    }
+
+    .nums::after {
+      background: darken($orange, 1);
+    }
+
+    .num:before {
+      background: $orange;
+    }
+
+    .num:after {
+      background: $orange;
+    }
+
+    .nums-four:after {
+      color: $black;
+    }
+  }
+}
