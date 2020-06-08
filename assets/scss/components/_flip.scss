@@ -204,18 +204,21 @@
 .barcelona {
   .flip {
     .nums::before {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $grey;
     }
 
     .nums::after {
+      color: $grey;
       background: darken($orange, 1);
     }
 
     .num:before {
+      color: $grey;
       background: $orange;
     }
 
     .num:after {
+      color: $grey;
       background: $orange;
     }
 
