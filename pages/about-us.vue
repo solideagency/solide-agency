@@ -157,6 +157,8 @@ export default {
           if (positionFromTop - windowHeight <= 0) {
             element.classList.add('fade-in-element');
             element.classList.remove('hidden');
+          } else {
+              element.classList.remove('fade-in-element');
           }
         }
       }
