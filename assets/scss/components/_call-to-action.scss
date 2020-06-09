@@ -61,7 +61,7 @@
   }
 }
 
-.cta-contact {
+.cta-contact-page {
   &::after {
     transform: translate(0);
     transition: transform .2s ease;
@@ -82,7 +82,7 @@
 }
 
 .barcelona {
-  .cta::after, .cta-contact::after {
+  .cta::after, .cta-contact-page::after {
     background-image: url('~@/assets/images/arrow-black.svg');
   }
 

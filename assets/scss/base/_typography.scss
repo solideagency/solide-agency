@@ -4,7 +4,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h1 > strong, .contact-heading, .cta-contact span {
+h1, h1 > strong, .contact-heading, .cta-contact-page span {
   @include font-size($font-size-header-big);
   font-weight: bold;
   line-height: 1.24;
