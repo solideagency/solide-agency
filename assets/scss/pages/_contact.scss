@@ -1,0 +1,37 @@
+.page-contact {
+  main .inner {
+    padding-top: 30vh;
+    min-height: 50vh;
+
+    .cta-contact {
+      cursor: pointer;
+      margin-bottom: 1.5em;
+
+      span {
+        display: block;
+        margin-bottom: .5em;
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, small)){
+        margin-bottom: .75em;
+
+        span {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, medium)){
+        margin-left: column-width-medium(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        margin-left: column-width-large(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        margin-left: column-width-extreme(1, 1);
+      }
+    }
+  }
+}

@@ -2,8 +2,13 @@
 .teaser {
   padding-top: 20vh; /* header */
   background-color: $green;
-  height: calc(100vh - 15vh - 15vh);
+  height: 100%;
   margin-bottom: 10em;
+
+  .city-images {
+    position: relative;
+    top: 2.5em;
+  }
 
   @media screen and (max-width: map-get($breakpoints, medium)){
     .city-images {
@@ -11,8 +16,20 @@
     }
   }
 
+  @media only screen and (min-width: map-get($breakpoints, small)){
+    .inner {
+      .call-to-action {
+        width: column-width-small(5, 4);
+      }
+
+      .city-images {
+        width: column-width-small(6, 5);
+      }
+    }
+  }
+
   @media screen and (min-width: map-get($breakpoints, medium)){
-    height: calc(100vh - 15vh - 25vh);
+    max-height: calc(100vh - 25vh);
 
     .inner {
       display: flex;
@@ -31,8 +48,6 @@
   }
 
   @media screen and (min-width: map-get($breakpoints, large)){
-    height: calc(100vh - 15vh - 10vh);
-
     .inner {
       display: flex;
       justify-content: space-between;

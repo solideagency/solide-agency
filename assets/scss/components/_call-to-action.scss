@@ -36,9 +36,13 @@
     background-position: bottom;
   }
 
-
   .cta-contact {
     text-align: center;
+
+    @media screen and (min-width: map-get($breakpoints, small)){
+      width: column-width-small(4, 3);
+      margin-left: column-width-small(1, 1);
+    }
 
     @media screen and (min-width: map-get($breakpoints, medium)){
       width: column-width-medium(4, 3);
@@ -57,8 +61,28 @@
   }
 }
 
+.cta-contact {
+  &::after {
+    transform: translate(0);
+    transition: transform .2s ease;
+    content:"";
+    width: 100px;
+    height: 1rem;
+    margin-left: 0rem;
+    display: inline-block;
+    background-image: url('~@/assets/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  &:hover::after {
+    transform: translate(20px, 0);
+  }
+}
+
 .barcelona {
-  .cta::after {
+  .cta::after, .cta-contact::after {
     background-image: url('~@/assets/images/arrow-black.svg');
   }
 

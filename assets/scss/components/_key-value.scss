@@ -1,8 +1,20 @@
 .key-value {
   .text {
-    @media only screen and (min-width: map-get($breakpoints, medium)){
-      display: flex;
 
+    @media only screen and (min-width: map-get($breakpoints, small)){
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        width: column-width-small(3, 2);
+      }
+
+      p {
+        width: column-width-small(3, 2);
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
       h2 {
         width: column-width-medium(4, 3);
       }
@@ -55,6 +67,11 @@
 
   div {
     margin-bottom: .75em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, small)){
+    width: column-width-medium(3, 2);
+    margin-left: column-width-small(3, 3);
   }
 
   @media only screen and (min-width: map-get($breakpoints, medium)){

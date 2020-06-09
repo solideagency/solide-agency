@@ -5,7 +5,7 @@
         <div class="inner">
           <div>
             <nuxt-link class="logo" to="/">
-              <h1>Sólide Agency</h1>
+              <h2>Sólide Agency</h2>
             </nuxt-link>
             <navigationItems/>
           </div>

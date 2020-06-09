@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div class="inner">
-      <h1>Contact</h1>
+      <h1 class="cta-contact"><span>Mail us at </span><a class="contact-heading" v-for="item in $store.state.company.companyDetails" :href="'mailto:' + item.email">{{' ' + item.email}}</a></h1>
+      <h1 class="cta-contact"><span>Call Suus at </span><a class="contact-heading" v-for="item in $store.state.company.companyDetails" :href="'tel:' + item.secondphonenumber">{{' ' + item.secondphonenumber}}</a></h1>
+      <h1 class="cta-contact"><span>Call Werner at </span><a class="contact-heading" v-for="item in $store.state.company.companyDetails" :href="'tel:' + item.phonenumber">{{' ' + item.phonenumber}}</a></h1>
     </div>
   </div>
 
