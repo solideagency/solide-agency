@@ -23,6 +23,9 @@ export default {
   css: [
     '@assets/scss/main.scss'
   ],
+  transition: {
+    mode: "in-out"
+  },
   /*
   ** Plugins to load before mounting the App
   */
