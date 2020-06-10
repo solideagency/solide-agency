@@ -1,5 +1,5 @@
 <template>
-  <div :class="'page-' + this.routeName">
+  <div :class="'page-' + this.$nuxt.$route.name">
     <header class="first">
       <div class="container">
         <div class="inner">
