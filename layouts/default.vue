@@ -71,15 +71,24 @@ export default {
       }
       prevScrollpos = currentScrollPos;
     }
+
+    // window.onload = pageName();
+    // var nav = document.querySelectorAll('a')
+    //
+    // function pageName(){
+    //   var path = window.location.pathname;
+    //   var div = document.querySelector('#__layout > div');
+    //   var url = path.replace('/', '');
+    //   if (url === ''){
+    //     div.classList.add('page-index');
+    //   } else {
+    //     div.classList.add('page-' + url);
+    //   }
+    // }
   },
   computed: {
     routeName: function(){
-      if(this.$nuxt.$route.name === 'work-project'){
-        var newVar = this.$nuxt.$route.name
-        return newVar
-      } else {
-        return this.$nuxt.$route.name
-      }
+      return this.$nuxt.$route.name
     }
   }
 }
