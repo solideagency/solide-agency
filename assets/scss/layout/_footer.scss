@@ -75,6 +75,7 @@ footer {
 .follow-us {
   flex-wrap: wrap;
   flex-direction: row;
+  align-content: baseline;
 
   @media only screen and (min-width: map-get($breakpoints, medium)){
     width: column-width-medium(2, 1);
