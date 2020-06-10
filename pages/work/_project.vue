@@ -4,7 +4,7 @@
       <div class="project-detail" v-for="project in this.projects">
         <div class="project-subtitle">
           <div>
-            <p class="caption">{{project.client}}</p>
+            <p class="client caption">{{project.client}}</p>
             <p class="service caption" v-for="service in project.services">{{service.title.value}}</p>
           </div>
           <h1>{{project.fulltitle}}</h1>
