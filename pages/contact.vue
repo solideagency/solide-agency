@@ -6,7 +6,6 @@
       <h1 class="cta-contact-page"><span>Call Werner at </span><a class="contact-heading" v-for="item in $store.state.company.companyDetails" :href="'tel:' + item.phonenumber">{{' ' + item.phonenumber}}</a></h1>
     </div>
   </div>
-
 </template>
 
 <script>
