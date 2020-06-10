@@ -74,6 +74,7 @@ export default {
   },
   computed: {
     routeName: function(){
+      console.log(this.$nuxt.$route.name)
       return this.$nuxt.$route.name
     }
   }

@@ -16,7 +16,6 @@ export const actions = {
     .depthParameter(1)
     .toPromise()
     .then(response => {
-      console.log(response.items[0].products.value[1].title.value);
       context.commit('setServices', response.items.map(item => ({
         name: item.title.value,
         products: item.products.value
