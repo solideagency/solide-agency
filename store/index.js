@@ -26,6 +26,7 @@ export const actions = {
           productImages: item.product_images.value,
           services: item.services.value,
           chapters: item.chapters.value,
+          websiteUrl: item.url.value,
           seoDescription: item.seo__meta_description.value,
           seoKeywords: item.seo__meta_keywords.value,
           slug: item.untitled_url_slug.value

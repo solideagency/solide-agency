@@ -2,4 +2,96 @@
   main .inner {
     padding-top: 30vh; /* header */
   }
+
+  .project-subtitle > {
+    h1 {
+      margin: .5em 0 1em 0;
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        width: column-width-large(9, 8);
+        margin-left: column-width-large(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        width: column-width-extreme(9, 8);
+        margin-left: column-width-extreme(1, 1);
+      }
+    }
+
+    div {
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        width: column-width-large(6, 5);
+        margin-left: column-width-large(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        width: column-width-extreme(6, 5);
+        margin-left: column-width-extreme(1, 1);
+      }
+    }
+  }
+
+  .project-detail {
+    img {
+      width: 100%;
+      margin: 7.5em 0;
+    }
+
+    img + img {
+      margin-top: 0;
+    }
+  }
+
+  .chapter {
+    h2 {
+      margin-bottom: .5em;
+    }
+
+    h2, p > p {
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        width: column-width-large(6, 5);
+        margin-left: column-width-large(3, 3);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        width: column-width-extreme(6, 5);
+        margin-left: column-width-extreme(3, 3);
+      }
+    }
+  }
+
+  .meta {
+    display: flex;
+
+    h2 {
+      margin-bottom: .5em;
+    }
+
+    p {
+      margin-bottom: .75em;
+    }
+
+    > div {
+      @media only screen and (min-width: map-get($breakpoints, large)){
+        width: column-width-large(2, 2);
+        margin-right: column-width-large(1, 1);
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, extreme)){
+        width: column-width-extreme(2, 2);
+        margin-right: column-width-extreme(1, 1);
+      }
+
+      &:last-of-type {
+        @media only screen and (min-width: map-get($breakpoints, large)){
+          width: column-width-large(3, 2);
+          margin-right: 0;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, extreme)){
+          width: column-width-extreme(3, 2);
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

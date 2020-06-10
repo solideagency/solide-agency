@@ -81,6 +81,28 @@
   }
 }
 
+.cta-link {
+  font-style: italic;
+
+  &::after {
+    transform: translate(0);
+    transition: transform .2s ease;
+    content:"";
+    width: 50px;
+    height: 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    background-image: url('~@/assets/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  &:hover::after {
+    transform: translate(20px, 0);
+  }
+}
+
 .barcelona {
   .cta::after, .cta-contact-page::after {
     background-image: url('~@/assets/images/arrow-black.svg');
