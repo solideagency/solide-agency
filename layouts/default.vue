@@ -87,7 +87,7 @@ export default {
     // }
   },
   computed: {
-    routeName: async function(){
+    routeName: function(){
       console.log(this.$nuxt.$route.name)
       return this.$nuxt.$route.name
     }
