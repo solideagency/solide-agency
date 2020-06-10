@@ -74,8 +74,11 @@ export default {
   },
   computed: {
     routeName: function(){
-      console.log(this.$nuxt.$route.name)
-      return this.$nuxt.$route.name
+      if(this.$nuxt.$route.name == 'work-project'){
+        console.log(this.$nuxt.$route.name)
+      } else {
+        return this.$nuxt.$route.name
+      }
     }
   }
 }
