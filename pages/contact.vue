@@ -11,6 +11,9 @@
 
 <script>
 export default {
+  transition: {
+    css: false
+  }, // set our transition with nuxt.js
   components: {
   },
   async fetch ({store, params}) {

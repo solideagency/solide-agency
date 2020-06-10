@@ -13,6 +13,9 @@ import projectpreview from '~/components/projectpreview.vue'
 import calltoaction from '~/components/calltoaction.vue'
 
 export default {
+  transition: {
+    css: false
+  }, // set our transition with nuxt.js
   components: {
     projectpreview,
     calltoaction

@@ -39,3 +39,11 @@ footer {
     padding-right: calc((100vw - #{$max-width})/2);
   }
 }
+
+// .page-enter-active, .page-leave-active {
+//   transition: all .25s;
+// }
+// .page-enter, .page-leave-active {
+//   display: none;
+//   // transform-origin: 50% 50%;
+// }

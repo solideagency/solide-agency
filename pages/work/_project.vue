@@ -10,6 +10,9 @@
 
 <script>
 export default {
+  transition: {
+    css: false
+  }, // set our transition with nuxt.js
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
       return store.state.projectSlug.some(project =>

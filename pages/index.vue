@@ -27,6 +27,9 @@ import service from '~/components/service.vue'
 import projectpreview from '~/components/projectpreview.vue'
 
 export default {
+  transition: {
+    css: false
+  }, // set our transition with nuxt.js
   components: {
     calltoaction,
     cityimage,

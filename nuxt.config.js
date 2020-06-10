@@ -23,9 +23,11 @@ export default {
   css: [
     '@assets/scss/main.scss'
   ],
-  transition: {
-    mode: "in-out"
+  pageTransition: {
+    name: "default",
+    mode: ""
   },
+  loading: false,
   /*
   ** Plugins to load before mounting the App
   */
