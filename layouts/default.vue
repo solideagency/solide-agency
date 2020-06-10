@@ -75,8 +75,8 @@ export default {
   computed: {
     routeName: function(){
       if(this.$nuxt.$route.name === 'work-project'){
-        var new = this.$nuxt.$route.name;
-        return new
+        var newVar = this.$nuxt.$route.name
+        return newVar
       } else {
         return this.$nuxt.$route.name
       }
