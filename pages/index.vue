@@ -65,14 +65,14 @@ export default {
 
     // Accepts any class name
     var rellax = new Rellax('.rellax');
-  },
-  head () {
-    return {
-      // meta: [
-      //   { hid: 'description', name: 'description', content: this.$store.state.teasers.metadescription },
-      //   { name: 'keywords', content: this.$store.state.teasers.metadekeywords }
-      // ]
-    }
   }
+  // head () {
+  //   return {
+  //     // meta: [
+  //     //   { hid: 'description', name: 'description', content: this.$store.state.teasers.metadescription },
+  //     //   { name: 'keywords', content: this.$store.state.teasers.metadekeywords }
+  //     // ]
+  //   }
+  // }
 }
 </script>
