@@ -58,7 +58,7 @@ export default {
     }
   },
   generate: {
-    fallback: true,
+    fallback: false,
     routes: [
       '/work/retailmade',
       '/work/de-film-als-een-kroket',
