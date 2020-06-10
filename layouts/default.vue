@@ -5,7 +5,8 @@
         <div class="inner">
           <div>
             <nuxt-link class="logo" to="/">
-              <h2>Sólide Agency</h2>
+              <!-- <h2>Sólide Agency </h2> -->
+              <h2>{{ $nuxt.$route.name }}</h2>
             </nuxt-link>
             <navigationItems/>
           </div>
@@ -16,7 +17,7 @@
         </div>
       </div>
     </header>
-    <main :class="'page-' + this.routeName">
+    <main>
       <nuxt/>
     </main>
     <footerBlock/>
