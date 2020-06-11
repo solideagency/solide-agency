@@ -9,7 +9,7 @@ export const mutations = {
 }
 
 export const actions = {
-  nuxtServerInit ({commit}) {
+  nuxtClientInit ({commit}) {
       return this.$deliveryClient
       .items()
       .type('project')

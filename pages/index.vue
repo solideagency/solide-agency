@@ -39,7 +39,7 @@ export default {
   },
   async fetch ({store, params}) {
     return Promise.all([
-      store.dispatch("nuxtServerInit"),
+      store.dispatch("nuxtClientInit"),
       store.dispatch("calltoaction/getCallToActions"),
       store.dispatch("cityimage/getCityImages"),
       store.dispatch("keyvalue/getKeyValues"),
