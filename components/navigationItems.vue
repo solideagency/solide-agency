@@ -13,7 +13,6 @@
 export default {
   computed: {
     items: function(){
-      // console.log(this.$store.state.navigation.navigationitems)
       return this.$store.state.navigation.navigationitems;
     }
   }

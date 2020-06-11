@@ -97,3 +97,23 @@
     }
   }
 }
+
+.other-projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 7.5em;
+
+  div {
+    width: calc((100% - 30px) / 2);
+
+    img {
+      width: 100%;
+      margin: 1em 0;
+    }
+  }
+
+  &:first-of-type {
+    margin-left: 30px;
+  }
+}

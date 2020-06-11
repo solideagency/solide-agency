@@ -36,15 +36,21 @@
           </div>
         </div>
       </div>
+      <otherprojects limit="2"/>
     </div>
   </div>
 </template>
 
 <script>
+import otherprojects from '~/components/other-projects.vue'
+
 export default {
   transition: {
     css: false
-  }, // set our transition with nuxt.js
+  },
+  components: {
+    otherprojects,
+  },
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
       return store.state.projectSlug.some(project =>

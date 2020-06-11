@@ -88,11 +88,7 @@ export default {
   },
   computed: {
     routeName: function(){
-      // setTimeout( () => {
         return this.$nuxt.$route.name
-      // }, 1);
-      // console.log(this.$nuxt.$route.name)
-      // return this.$nuxt.$route.name
     }
   }
 }
