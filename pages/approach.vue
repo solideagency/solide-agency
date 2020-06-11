@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="inner">
-      <keyvalue page="Services"/>
+      <keyvalue page="Approach"/>
       <principle/>
       <h1 class="process-title">Our process</h1>
       <processStep/>

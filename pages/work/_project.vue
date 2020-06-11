@@ -4,8 +4,8 @@
       <div class="project-detail" v-for="project in this.projects">
         <div class="project-subtitle">
           <div>
-            <p class="client caption">{{project.client}}</p>
-            <p class="service caption" v-for="service in project.services">{{service.title.value}}</p>
+            <p class="client caption service">{{project.client}}</p>
+            <p class="service caption service" v-for="service in project.services">{{service.title.value}}</p>
           </div>
           <h1>{{project.fulltitle}}</h1>
           <div v-html="project.context"></div>
@@ -24,11 +24,12 @@
             <p class="small-text">{{project.client}}</p>
           </div>
           <div>
-            <h2>Services</h2>
-            <p class="small-text" v-for="service in project.services">{{service.title.value}}</p>
+            <h2>Publication</h2>
+            <p class="small-text">{{project.date}}</p>
           </div>
           <div>
             <h2>Deliverables</h2>
+            <p class="small-text" v-for="product in project.products">{{product.title.value}}</p>
           </div>
           <div>
             <h2>Links</h2>

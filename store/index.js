@@ -26,6 +26,7 @@ export const actions = {
         context: item.context.value,
         productImages: item.product_images.value,
         services: item.services.value,
+        products: item.products.value,
         chapters: item.chapters.value,
         websiteUrl: item.url.value,
         seoDescription: item.seo__meta_description.value,

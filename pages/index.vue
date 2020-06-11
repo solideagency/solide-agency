@@ -2,7 +2,7 @@
   <div>
     <div class="container teaser">
       <div class="inner">
-        <calltoaction limit="1" linkto="Services"/>
+        <calltoaction limit="1" linkto="Approach"/>
         <cityimage/>
       </div>
     </div>

@@ -14,7 +14,7 @@
     <div class="what-we-do">
       <h3>What we do</h3>
       <nuxt-link class="small-text" to="/work">Work</nuxt-link>
-      <nuxt-link class="small-text" to="/services">Services</nuxt-link>
+      <nuxt-link class="small-text" to="/approach">Approach</nuxt-link>
     </div>
     <div class="follow-us">
       <h3>Follow us</h3>
