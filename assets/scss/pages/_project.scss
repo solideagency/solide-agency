@@ -104,12 +104,15 @@
   margin-top: 5em;
   margin-bottom: 7.5em;
 
-  div {
+  > div {
     width: calc((100% - 30px) / 2);
 
-    img {
-      width: 100%;
-      margin: 1em 0;
+    .caption {
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      margin-top: 1em;
     }
   }
 

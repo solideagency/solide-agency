@@ -3,7 +3,9 @@
     <div v-for="other in this.others">
       <nuxt-link :to="'/work/' + (other.slug)">
         <p class="caption">Next project</p>
-        <img :src="(other.headerImageURL)" :alt="(other.headerImageAlt)"/>
+        <div class="container-img">
+          <img :src="(other.headerImageURL)" :alt="(other.headerImageAlt)"/>
+        </div>
         <h2>{{other.title}}</h2>
       </nuxt-link>
     </div>

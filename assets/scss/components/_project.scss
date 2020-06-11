@@ -52,19 +52,19 @@
     width: column-width-extreme(10, 9);
     margin-left: column-width-extreme(1, 1);
   }
+}
 
-  .container-img {
-    display: inline-block; /* shrink wrap to image */
-    overflow: hidden; /* hide the excess */
+.container-img {
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* hide the excess */
 
-    img {
-      display: block; /* no whitespace */
-      transition: .3s ease-in-out;
-      width: 100%;
+  img {
+    display: block; /* no whitespace */
+    transition: .3s ease-in-out;
+    width: 100%;
 
-      &:hover {
-        transform: scale(1.05);
-      }
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }
