@@ -97,7 +97,6 @@
 
       @media only screen and (min-width: map-get($breakpoints, medium)){
         width: 100%;
-        display: flex;
       }
 
       @media only screen and (min-width: map-get($breakpoints, large)){
