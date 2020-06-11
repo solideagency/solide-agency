@@ -25,7 +25,7 @@
           </div>
           <div>
             <h2>Publication</h2>
-            <p class="small-text">{{project.date}}</p>
+            <p class="small-text date"> {{ project.date.toLocaleString("default", { month: "long" }) + ' '  + project.date.getFullYear() }}</p>
           </div>
           <div>
             <h2>Deliverables</h2>
