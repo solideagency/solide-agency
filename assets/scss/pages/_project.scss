@@ -32,8 +32,14 @@
 
   .project-detail {
     img {
-      width: 100%;
-      margin: 7.5em 0;
+      width: 100vw;
+      margin: 5em 0;
+      margin-left: -5vw;
+
+      @media only screen and (min-width: map-get($breakpoints, small)){
+        width: 100%;
+        margin: 7.5em 0;
+      }
     }
 
     img + img {
@@ -47,6 +53,11 @@
     }
 
     h2, p > p {
+      @media only screen and (min-width: map-get($breakpoints, small)){
+        width: column-width-small(4, 3);
+        margin-left: column-width-small(1, 1);
+      }
+
       @media only screen and (min-width: map-get($breakpoints, large)){
         width: column-width-large(6, 5);
         margin-left: column-width-large(3, 3);
@@ -60,9 +71,17 @@
   }
 
   .meta {
-    display: flex;
     margin-top: 2.5em;
     margin-bottom: 7.5em;
+
+    @media only screen and (min-width: map-get($breakpoints, small)){
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      flex-wrap: nowrap;
+    }
 
     h2 {
       margin-bottom: .5em;
@@ -73,6 +92,14 @@
     }
 
     > div {
+      margin-bottom: 2.5em;
+      width: 50%;
+
+      @media only screen and (min-width: map-get($breakpoints, medium)){
+        width: 100%;
+        display: flex;
+      }
+
       @media only screen and (min-width: map-get($breakpoints, large)){
         width: column-width-large(2, 2);
         margin-right: column-width-large(1, 1);
