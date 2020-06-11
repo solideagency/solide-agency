@@ -51,6 +51,12 @@ export default {
   components: {
     otherprojects,
   },
+  async fetch ({store, params}) {
+    return Promise.all([
+      store.dispatch("company/getCompanyDetails"),
+      store.dispatch("socialmedia/getSocialMediaAccounts")
+    ])
+  },
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
     console.log(store)

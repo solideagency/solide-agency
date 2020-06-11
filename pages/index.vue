@@ -47,7 +47,6 @@ export default {
       store.dispatch("project/getProjects"),
       store.dispatch("company/getCompanyDetails"),
       store.dispatch("socialmedia/getSocialMediaAccounts")
-
     ])
   },
   mounted(){
