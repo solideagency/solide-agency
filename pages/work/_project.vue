@@ -16,6 +16,8 @@
           <h2>{{chapter.title.value}}</h2>
           <p class="small-text" v-html="chapter.text.value"></p>
           <img alt="" v-for="image in chapter.assets.value" :src="image.url"/>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O5K3607Hkvc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="//www.youtube.com/embed/qUJYqhKZrwA?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="meta">
