@@ -40,7 +40,7 @@
   }
 
   .project-detail {
-    img {
+    img, video {
       width: 100vw;
       margin: 5em 0;
       margin-left: -5vw;
@@ -51,7 +51,7 @@
       }
     }
 
-    img + img {
+    img + img, img + video, video + img {
       margin-top: 0;
     }
   }

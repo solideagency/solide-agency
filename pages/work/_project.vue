@@ -9,15 +9,16 @@
           </div>
           <h1>{{project.fulltitle}}</h1>
           <div v-html="project.context"></div>
-          <img class="first-image" alt="" v-for="image in project.productImages" :src="image.url"/>
+          <img class="first-image" alt="" v-for="image in project.productImages" v-if="image.type.includes('image')" :src="image.url"/>
+          <video v-for="image in project.productImages" v-if="image.type.includes('video')" controls>
+            <source :src="image.url" :type="image.type">
+          </video>
         </div>
 
         <div class="chapter" v-for="chapter in project.chapters">
           <h2>{{chapter.title.value}}</h2>
           <p class="small-text" v-html="chapter.text.value"></p>
           <img alt="" v-for="image in chapter.assets.value" :src="image.url"/>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O5K3607Hkvc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" height="100%" src="//www.youtube.com/embed/qUJYqhKZrwA?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="meta">
