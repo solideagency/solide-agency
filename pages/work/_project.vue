@@ -31,8 +31,8 @@
             <h2>Deliverables</h2>
             <p class="small-text" v-for="product in project.products">{{product.title.value}}</p>
           </div>
-          <div>
-            <h2>Links</h2>
+          <div v-if="project.websiteUrl">
+            <h2>Link</h2>
             <a class="small-text cta-link" target="_blank" :href="'https://' + project.websiteUrl">{{project.websiteUrl}}</a>
           </div>
         </div>
