@@ -18,6 +18,7 @@
 
   @media only screen and (min-width: map-get($breakpoints, small)){
     .inner {
+
       .call-to-action {
         width: column-width-small(5, 4);
       }

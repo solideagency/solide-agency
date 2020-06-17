@@ -78,11 +78,6 @@ export default {
         project.slug === this.$route.params.project
       )
     }
-  },
-  mounted(){
-    document.querySelectorAll('.videos').forEach(function(video){
-      video.play();
-    })
   }
 }
 </script>
