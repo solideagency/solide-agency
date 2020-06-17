@@ -10,7 +10,7 @@
           <h1>{{project.fulltitle}}</h1>
           <div v-html="project.context"></div>
           <img class="first-image" alt="" v-for="image in project.productImages" v-if="image.type.includes('image')" :src="image.url"/>
-          <video v-for="image in project.productImages" v-if="image.type.includes('video')" autoplay loop>
+          <video v-for="image in project.productImages" v-if="image.type.includes('video')" controls>
             <source :src="image.url" :type="image.type">
           </video>
         </div>
