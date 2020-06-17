@@ -1,19 +1,25 @@
 .projects {
+  padding-top: 5em;
   margin-bottom: 10em;
 
   &::before {
     content:"";
-    width: 110vw;
+    width: 105vw;
+    left: -5vw;
     min-height: 250px;
     position: absolute;
     z-index: -1;
-    left: -5vw;
-    margin-top: -14em;
+    margin-top: -10em;
     background-image: url('~@/assets/images/our-work-dark-mode-full.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
     // background-attachment: fixed;
+
+    @media only screen and (min-width: map-get($breakpoints, small)){
+      width: 110vw;
+      left: -5vw;
+    }
 
     @media only screen and (min-width: map-get($breakpoints, medium)){
       margin-top: -10em;
