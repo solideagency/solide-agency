@@ -10,7 +10,7 @@
           <h1>{{project.fulltitle}}</h1>
           <div v-html="project.context"></div>
           <img class="first-image" alt="" v-for="image in project.productImages" v-if="image.type.includes('image')" :src="image.url"/>
-          <video v-for="image in project.productImages" v-if="image.type.includes('video')" controls>
+          <video v-for="image in project.productImages" v-if="image.type.includes('video')" autoplay loop>
             <source :src="image.url" :type="image.type">
           </video>
         </div>
@@ -18,7 +18,11 @@
         <div class="chapter" v-for="chapter in project.chapters">
           <h2>{{chapter.title.value}}</h2>
           <p class="small-text" v-html="chapter.text.value"></p>
-          <img alt="" v-for="image in chapter.assets.value" :src="image.url"/>
+          <img alt="" v-for="image in chapter.assets.value" v-if="image.type.includes('image')" :src="image.url"/>
+          <video v-for="image in chapter.assets.value" v-if="image.type.includes('video')" autoplay loop>
+            <source :src="image.url" :type="image.type">
+          </video>
+
         </div>
 
         <div class="meta">
@@ -63,7 +67,6 @@ export default {
   },
   validate ({ params, store, context}) {
     // Check if `params.id` is an existing category
-    console.log(store)
       return store.state.projectSlug.some(project =>
         project.slug === params.project
       )
