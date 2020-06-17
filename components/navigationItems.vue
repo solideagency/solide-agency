@@ -1,10 +1,10 @@
 <template>
   <nav>
     <ul>
-      <nuxt-link to="/work">Work</nuxt-link>
-      <nuxt-link to="/approach">Approach</nuxt-link>
-      <nuxt-link to="/about-us">About us</nuxt-link>
-      <nuxt-link to="/contact">Contact</nuxt-link>
+      <li><nuxt-link to="/work">Work</nuxt-link></li>
+      <li><nuxt-link to="/approach">Approach</nuxt-link></li>
+      <li><nuxt-link to="/about-us">About us</nuxt-link></li>
+      <li><nuxt-link to="/contact">Contact</nuxt-link></li>
     </ul>
   </nav>
 </template>
