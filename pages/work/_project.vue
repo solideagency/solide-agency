@@ -9,7 +9,7 @@
           </div>
           <h1>{{project.fulltitle}}</h1>
           <div v-html="project.context"></div>
-          <img class="first-image" alt="" v-for="image in project.productImages" v-if="image.type.includes('image')" :src="image.url"/>
+          <img class="first-image" v-for="image in project.productImages" v-if="image.type.includes('image')" :alt="(image.description)" :src="image.url"/>
           <video v-for="image in project.productImages" v-if="image.type.includes('video')" controls>
             <source :src="image.url" :type="image.type">
           </video>
@@ -18,7 +18,7 @@
         <div class="chapter" v-for="chapter in project.chapters">
           <h2>{{chapter.title.value}}</h2>
           <p class="small-text" v-html="chapter.text.value"></p>
-          <img alt="" v-for="image in chapter.assets.value" v-if="image.type.includes('image')" :src="image.url"/>
+          <img v-for="image in chapter.assets.value" v-if="image.type.includes('image')" :alt="(image.description)" :src="image.url"/>
           <video class="videos" v-for="image in chapter.assets.value" v-if="image.type.includes('video')" autoplay loop muted>
             <source :src="image.url" :type="image.type">
           </video>

@@ -9,7 +9,7 @@
         </div>
         <div v-for="employee in $store.state.employee.employees" :class="'employee ' + employee.name">
           <p class="small-text">{{employee.about}}</p>
-          <img :src="(employee.image)" alt=""/>
+          <img :src="(employee.image)" :alt="(employee.imageAlt)"/>
         </div>
       </div>
       <div class="two-places">

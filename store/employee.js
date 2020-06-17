@@ -19,7 +19,8 @@ export const actions = {
         name: item.name.value,
         job: item.jobtitle.value,
         about: item.description.value,
-        image: item.profile_picture.value[0].url
+        image: item.profile_picture.value[0].url,
+        imageAlt: item.profile_picture.value[0].description
       })))
     });
   }

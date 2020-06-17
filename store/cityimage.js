@@ -17,7 +17,8 @@ export const actions = {
     .then(response => {
       context.commit('setCityImages', response.items.map(item => ({
         image: item.image_of_the_city.value[0].url,
-        city: item.city.value[0].name
+        city: item.city.value[0].name,
+        alt: item.image_of_the_city.value[0].description
       })))
     });
   }
