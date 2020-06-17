@@ -108,10 +108,10 @@
 
     > div {
       margin-bottom: 2.5em;
-      width: 50%;
+      width: 100%;
 
-      @media only screen and (min-width: map-get($breakpoints, medium)){
-        width: 100%;
+      @media only screen and (min-width: map-get($breakpoints, small)){
+        width: 50%;
       }
 
       @media only screen and (min-width: map-get($breakpoints, large)){
