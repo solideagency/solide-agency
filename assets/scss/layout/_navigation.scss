@@ -9,11 +9,14 @@ nav {
     list-style: none;
     display: inline-block;
     margin-right: .1em;
-    padding: .25em;
 
     @media only screen and (min-width: map-get($breakpoints, medium)){
       margin-right: 1em;
     }
+  }
+
+  a {
+    padding: .25em;
 
     &:hover, &.nuxt-link-active {
       color: $black;
@@ -24,7 +27,7 @@ nav {
 
 .page-index {
   nav {
-    li:hover, a.nuxt-link-active {
+    a:hover, a.nuxt-link-active {
       color: $white;
     }
   }
