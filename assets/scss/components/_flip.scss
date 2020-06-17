@@ -22,7 +22,7 @@
   // box-shadow: 0 3px 10px #111;
   // border-top: 1px solid #393939;
   display: inline-block;
-  height: 150px;
+  height: 75px;
   margin: 0 .25em;
   // perspective: 1000px;
   position: relative;
@@ -30,6 +30,7 @@
   font-weight: bold;
 
   @media only screen and (min-width: map-get($breakpoints, small)){
+    height: 150px;
     margin: 0 .5em;
     width: calc((100% - (7 * 1.25em)) / 7);
   }
@@ -53,7 +54,7 @@
   bottom: 0;
   width: 100%;
   height: calc(50% - 1px);
-  font-size: 60px;
+  font-size: 30px;
   line-height: 0;
   text-align: center;
   background: darken($green, 1);
@@ -104,7 +105,7 @@
   // animation-fill-mode: forwards;
   // animation-timing-function: ease-in;
   border-radius: 5px;
-  font-size: 60px;
+  font-size: 30px;
   height: 100%;
   left: 0;
   position: absolute;
