@@ -20,6 +20,7 @@
     .inner {
       .call-to-action {
         width: column-width-small(5, 4);
+        padding-bottom: 5em;
       }
 
       .city-images {
@@ -29,12 +30,12 @@
   }
 
   @media screen and (min-width: map-get($breakpoints, medium)){
-    max-height: calc(100vh - 25vh);
+    // min-height: calc(100vh - 25vh);
 
     .inner {
       display: flex;
       justify-content: space-between;
-      height: calc(100vh - 15vh - 25vh + 5.5vh);
+      // height: calc(100vh - 15vh - 25vh + 5.5vh);
 
       .call-to-action {
         width: column-width-medium(4, 4);
@@ -51,7 +52,7 @@
     .inner {
       display: flex;
       justify-content: space-between;
-      height: calc(100vh - 15vh - 10vh + 5.5vh);
+      // height: calc(100vh - 15vh - 10vh + 5.5vh);
 
       .call-to-action {
         width: column-width-large(6, 5);
