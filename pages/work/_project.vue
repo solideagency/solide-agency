@@ -19,7 +19,7 @@
           <h2>{{chapter.title.value}}</h2>
           <p class="small-text" v-html="chapter.text.value"></p>
           <img alt="" v-for="image in chapter.assets.value" v-if="image.type.includes('image')" :src="image.url"/>
-          <video class="videos" v-for="image in chapter.assets.value" v-if="image.type.includes('video')" autoplay loop>
+          <video class="videos" v-for="image in chapter.assets.value" v-if="image.type.includes('video')" autoplay loop muted>
             <source :src="image.url" :type="image.type">
           </video>
 
