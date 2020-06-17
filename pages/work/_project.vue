@@ -41,6 +41,7 @@
           <div v-if="project.websiteUrl">
             <h2>Link</h2>
             <a class="small-text cta-link" target="_blank" :href="'https://' + project.websiteUrl">{{project.websiteUrl}}</a>
+            <a class="small-text cta-link" target="_blank" v-if="project.websiteUrl2" :href="'https://' + project.websiteUrl2">{{project.websiteUrl2}}</a>
           </div>
         </div>
       </div>

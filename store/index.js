@@ -29,6 +29,7 @@ export const actions = {
         products: item.products.value,
         chapters: item.chapters.value,
         websiteUrl: item.url.value,
+        websiteUrl2: item.url2.value,
         seoDescription: item.seo__meta_description.value,
         seoKeywords: item.seo__meta_keywords.value,
         slug: item.untitled_url_slug.value
