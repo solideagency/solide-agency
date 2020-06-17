@@ -5,7 +5,9 @@ nav {
     margin: 0;
   }
 
-  a {
+  li {
+    list-style: none;
+    display: inline-block;
     margin-right: .1em;
     padding: .25em;
 
@@ -22,7 +24,7 @@ nav {
 
 .page-index {
   nav {
-    a:hover, a.nuxt-link-active {
+    li:hover, a.nuxt-link-active {
       color: $white;
     }
   }
