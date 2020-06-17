@@ -6,6 +6,9 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Sólide Agency',
     meta: [
       { charset: 'utf-8' },
