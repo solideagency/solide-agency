@@ -9,6 +9,10 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
+    script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=UA-169900871-1'},
+      { src: '/googleanalytics.js'}
+    ],
     title: 'Sólide Agency',
     meta: [
       { charset: 'utf-8' },
