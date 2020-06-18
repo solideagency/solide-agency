@@ -10,7 +10,7 @@ export default {
       lang: 'en'
     },
     script: [
-      { src: 'https://www.googletagmanager.com/gtag/js?id=UA-169900871-1'},
+      { src: 'https://www.googletagmanager.com/gtag/js?id=UA-169900871-1', async: true},
       { src: '/googleanalytics.js'}
     ],
     title: 'Sólide Agency',
