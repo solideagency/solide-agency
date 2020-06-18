@@ -30,13 +30,15 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/ga.js', mode: 'client' },
     { src: '~/plugins/nuxt-client-init.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: process.env.GAID
+    }]
   ],
   /*
   ** Nuxt.js modules
