@@ -20,5 +20,7 @@
     "rxjs": "^6.5.5",
     "sass-loader": "^8.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.3.0"
+  }
 }
