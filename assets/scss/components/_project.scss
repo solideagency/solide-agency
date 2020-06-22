@@ -9,7 +9,7 @@
     min-height: 250px;
     position: absolute;
     z-index: -1;
-    margin-top: -10em;
+    margin-top: -9em;
     background-image: url('~@/assets/images/our-work-dark-mode-full.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -19,6 +19,7 @@
     @media only screen and (min-width: map-get($breakpoints, small)){
       width: 110vw;
       left: -5vw;
+      margin-top: -10em;
     }
 
     @media only screen and (min-width: map-get($breakpoints, medium)){
