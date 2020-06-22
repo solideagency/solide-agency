@@ -8,7 +8,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 20000000;
-  height: 7.5em;
+  height: 5em;
   padding-top: 2.5vh;
   transition: top 0.2s ease-in-out;
   background-color: $black;
@@ -45,7 +45,7 @@ header {
 }
 
 .nav-up {
-  top: -15vh;
+  top: -7.5em;
 }
 
 .barcelona {
