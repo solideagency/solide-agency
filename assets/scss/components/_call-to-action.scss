@@ -116,7 +116,7 @@
 }
 
 .barcelona {
-  .cta::after, .cta-contact-page::after, .cta-link::after {
+  .cta::after, .cta-contact-page a::after, .cta-link::after {
     background-image: url('~@/assets/images/arrow-black.svg');
   }
 
