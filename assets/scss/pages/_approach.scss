@@ -1,6 +1,10 @@
 .page-approach {
   main {
-    padding-top: 30vh; /* header */
+    padding-top: 22.5vh; /* header */
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      padding-top: 30vh; /* header */
+    }
 
     h1 {
       @media only screen and (min-width: map-get($breakpoints, medium)){

@@ -1,7 +1,11 @@
 .page-contact {
   main .inner {
-    padding-top: 30vh;
+    padding-top: 22.5vh; /* header */
     min-height: 50vh;
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      padding-top: 30vh; /* header */
+    }
 
     .cta-contact-page {
       cursor: pointer;

@@ -1,6 +1,10 @@
 .page-about-us {
   main .inner {
-    padding-top: 30vh; /* header */
+    padding-top: 22.5vh; /* header */
+
+    @media only screen and (min-width: map-get($breakpoints, medium)){
+      padding-top: 30vh; /* header */
+    }
 
     > div {
       margin-bottom: 7.5em;
