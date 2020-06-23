@@ -76,6 +76,7 @@ p, a, button, strong, em, input, span {
   @include font-size($font-size-text-big);
   text-decoration: none;
   color: $white;
+  line-height: 1.4;
 
   &.small-text, sub, &.small-text > p {
     line-height: 1.5;
