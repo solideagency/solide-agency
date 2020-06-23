@@ -65,7 +65,7 @@
       box-shadow: inset 0px -15px 0px -5px rgba($white, 0.3);
 
       @media only screen and (min-width: map-get($breakpoints, medium)){
-        box-shadow: inset 0px -17.5px 0px -5px rgba($orange, 0.5);
+        box-shadow: inset 0px -17.5px 0px -5px rgba($white, 0.5);
       }
     }
   }
@@ -76,7 +76,7 @@
       box-shadow: inset 0px -15px 0px -5px rgba($green, 0.5);
 
       @media only screen and (min-width: map-get($breakpoints, medium)){
-        box-shadow: inset 0px -17.5px 0px -5px rgba($orange, 0.5);
+        box-shadow: inset 0px -17.5px 0px -5px rgba($green, 0.5);
       }
     }
   }
