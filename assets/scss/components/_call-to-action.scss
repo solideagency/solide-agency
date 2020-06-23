@@ -63,7 +63,7 @@
 }
 
 .cta-contact-page {
-  &::after {
+  a::after {
     transform: translate(0);
     transition: transform .2s ease;
     content:"";
@@ -77,7 +77,7 @@
     background-position: bottom;
   }
 
-  &:hover::after {
+  a:hover::after {
     transform: translate(20px, 0);
   }
 }
