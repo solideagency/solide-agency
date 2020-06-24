@@ -4,6 +4,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-moz-selection { /* Code for Firefox */
+  background: $orange;
+}
+
+::selection {
+  background: $orange;
+}
+
 h1, h1 > strong, .contact-heading, .cta-contact-page span {
   @include font-size($font-size-header-big);
   font-weight: bold;
