@@ -78,6 +78,24 @@ export default {
         project.slug === this.$route.params.project
       )
     }
+  },
+  mounted(){
+    var videos = document.querySelectorAll('video')
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        videos.forEach(function(e){
+          e.pause();
+        })
+      } else {
+        videos.forEach(function(e){
+          e.play();
+        })
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
   }
 }
 </script>
