@@ -12,7 +12,7 @@
           <img :src="(employee.image)" :alt="(employee.imageAlt)"/>
         </div>
       </div>
-      <div class="two-places" id="flip">
+      <div class="two-places" id="twoplaces">
         <h1>We are in two places</h1>
         <p class="small-text" v-for="item in $store.state.company.companyDetails" v-html="item.culture"></p>
         <div class="flip hidden">
