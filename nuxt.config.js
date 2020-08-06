@@ -1,10 +1,11 @@
 require('dotenv').config()
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
+  target: 'static',
   head: {
     htmlAttrs: {
       lang: 'en'
