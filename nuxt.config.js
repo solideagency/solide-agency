@@ -1,7 +1,8 @@
 require('dotenv').config()
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
+  //needs to go to universal if it wants to be static generated
   /*
   ** Headers of the page
   */
