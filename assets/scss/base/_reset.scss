@@ -13,6 +13,7 @@ html, body {
 }
 
 body {
+  overscroll-behavior: none;
   background-color: $black;
 
   &.barcelona {
