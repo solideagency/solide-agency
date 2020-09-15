@@ -13,11 +13,11 @@ export default {
     },
     title: 'Sólide Agency',
     meta: [
-      { property:'og:image', content: 'https://www.cmd-amsterdam.nl/wp-content/uploads/2019/04/LR-51E6AEBB-397C-4F33-AD7D-0721288BE1F0.png'},
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Sólide, Sólide Agency, Agency, Creative, Digital, Amsterdam, Barcelona, Werner Hiemstra, Suus ten Voorde'},
-      { hid: 'description', name: 'description', content: 'Creative digital agency. Sólide is there for those who want to be outstanding. Operating from Amsterdam and Barcelona.' }
+      { hid: 'description', name: 'description', content: 'Creative digital agency. Sólide is there for those who want to be outstanding. Operating from Amsterdam and Barcelona.' },
+      { property:'og:image', content: 'https://www.solide.agency/favicon-wit.png'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon-wit.png' }
