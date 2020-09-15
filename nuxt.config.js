@@ -17,7 +17,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Sólide, Sólide Agency, Agency, Creative, Digital, Amsterdam, Barcelona, Werner Hiemstra, Suus ten Voorde'},
       { hid: 'description', name: 'description', content: 'Creative digital agency. Sólide is there for those who want to be outstanding. Operating from Amsterdam and Barcelona.' },
-      { property:'og:image', content: 'https://www.solide.agency/favicon-wit.png'}
+      { property: 'og:image', content: 'https://www.solide.agency/favicon-wit.png'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon-wit.png' }
