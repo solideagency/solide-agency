@@ -13,7 +13,7 @@ export default {
     },
     title: 'Sólide Agency',
     meta: [
-      { name:'og:image', content: '/favicon-wit.png'},
+      { name:'og:image', content: 'https://www.solide.agency/favicon-wit.png'},
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'keywords', content: 'Sólide, Sólide Agency, Agency, Creative, Digital, Amsterdam, Barcelona, Werner Hiemstra, Suus ten Voorde'},
